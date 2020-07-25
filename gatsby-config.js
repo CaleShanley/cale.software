@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter w/ styled-components`,
-    description: `Gatsby starter using styled-components`,
-    author: `@blakenoll`,
+    title: `Cale Shanley - Web Developer`,
+    description: `Sydney based web developer and recent general assembly graduate for software engineering.`,
+    author: `@CaleShanley`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#BBC0BA`,
+        theme_color: `#BBC0BA`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
