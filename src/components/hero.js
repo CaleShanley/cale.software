@@ -7,9 +7,9 @@ import Image from '../components/image'
 const Hero = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>My name is cale</h1>
       <HeroContainer>
         <Paragraph>
+          <h1>Junior Web Developer from Sydney</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           convallis eget ante semper finibus. Nunc pretium purus ac felis
           lobortis scelerisque. Maecenas semper fringilla nibh, in consectetur
@@ -41,21 +41,27 @@ Hero.defaultProps = {
 
 const StyledHero = styled(Hero)`
   color: var(--white);
-  background: var(--primary-color);
+  background: var(--white);
   padding: 1rem 0;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  margin-top: 2em;
+  /* border: solid 1px red; */
   h1 {
     margin: 0;
+    margin-bottom: 2rem;
   }
 `
+
 const HeroContainer = styled.div`
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 5rem;
+  grid-template-columns: 0.7fr 0.4fr;
+  /* align-content: center; */
 `
 
 const Paragraph = styled.p`
   color: black;
+  margin-right: 10rem;
 `
 
 export default StyledHero
