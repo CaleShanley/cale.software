@@ -43,20 +43,23 @@ const StyledHero = styled(Hero)`
   color: var(--white);
   background: var(--white);
   padding: 1rem 0;
-  justify-content: space-between;
   margin-bottom: 1rem;
   margin-top: 2em;
-  /* border: solid 1px red; */
+  font-size: 20px;
+  word-spacing: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   h1 {
     margin: 0;
     margin-bottom: 2rem;
+    color: black;
+    font-size: 47px;
   }
 `
 
 const HeroContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.7fr 0.4fr;
-  /* align-content: center; */
+  grid-template-columns: 1fr 0.5fr;
 `
 
 const Paragraph = styled.p`

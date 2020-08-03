@@ -2,12 +2,11 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import { Container } from './layoutComponents'
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
-    <Container>
-      <h1>Languages I can't use</h1>
+    <h1>Some topics I've learned over the course</h1>
+    <div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
         convallis eget ante semper finibus. Nunc pretium purus ac felis lobortis
@@ -23,7 +22,7 @@ const Languages = ({ siteTitle, className }) => (
         aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
         non, volutpat elit.
       </p>
-    </Container>
+    </div>
   </div>
 )
 
@@ -37,11 +36,14 @@ Languages.defaultProps = {
 
 const StyledLanguages = styled(Languages)`
   color: var(--white);
-  background: var(--primary-color);
+  background: var(--secondary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
+  color: black;
+  text-align: center;
   h1 {
-    margin: 0;
+    margin: 1em auto;
+    color: black;
   }
 `
 
