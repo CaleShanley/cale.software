@@ -18,7 +18,7 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "cale_headshot_b_w.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -26,7 +26,10 @@ const Image = () => (
       }
     `}
     render={(data) => (
-      <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        style={{ 'max-width': '433px' }}
+      />
     )}
   />
 )
