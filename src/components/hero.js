@@ -25,8 +25,6 @@ const Hero = ({ siteTitle, className }) => (
           sit amet nunc rhoncus, sollicitudin turpis non, volutpat elit.
         </Paragraph>
       </div>
-
-      <Image />
     </Container>
   </div>
 )
