@@ -8,7 +8,7 @@ const Hero = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <h1>My name is cale</h1>
-      <div>
+      <HeroContainer>
         <Paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           convallis eget ante semper finibus. Nunc pretium purus ac felis
@@ -24,8 +24,9 @@ const Hero = ({ siteTitle, className }) => (
           ultrices. Etiam hendrerit nunc egestas aliquet scelerisque. Integer
           sit amet nunc rhoncus, sollicitudin turpis non, volutpat elit.
         </Paragraph>
-      </div>
-      <Image />
+
+        <Image />
+      </HeroContainer>
     </Container>
   </div>
 )
@@ -43,14 +44,18 @@ const StyledHero = styled(Hero)`
   background: var(--primary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
-  display: inline-block;
   h1 {
     margin: 0;
   }
 `
+const HeroContainer = styled.div`
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 5rem;
+`
 
 const Paragraph = styled.p`
-  color: red;
+  color: black;
 `
 
 export default StyledHero
