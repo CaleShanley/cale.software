@@ -13,7 +13,7 @@ const Hero = ({ siteTitle, className }) => (
           <Image />
         </Zoom>
         <Paragraph>
-          <h1>I'm a Junior Web developer from Sydney.</h1>
+          <h1>I'm a Junior Web developer from Sydney looking for Work.</h1>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque
           commodi reprehenderit eligendi tempore corporis tempora, laboriosam
           ullam nulla praesentium delectus maiores sunt incidunt quas libero at
@@ -43,7 +43,7 @@ const StyledHero = styled(Hero)`
 
   h1 {
     margin: 0;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     margin-bottom: 1rem;
     color: black;
     font-size: 50px;

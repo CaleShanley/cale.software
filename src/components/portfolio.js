@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
@@ -36,8 +35,8 @@ Portfolio.defaultProps = {
 }
 
 const StyledPortfolio = styled(Portfolio)`
-  color: var(--white);
-  background: var(--primary-color);
+  color: black;
+  background: var(--secondary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
   margin-top: 15em;

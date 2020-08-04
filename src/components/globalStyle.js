@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
-    --primary-color: #222831;
+    --primary-color: linear-gradient(180deg,#e0f3fa,rgba(224,238,250,.63));;
     --secondary-color: linear-gradient(180deg,#eee,#fafafa);;
     --white: #ffffff;
   }

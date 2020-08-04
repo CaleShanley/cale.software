@@ -30,14 +30,16 @@ const Languages = ({ siteTitle, className }) => (
         aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
         non, volutpat elit.
       </p>
-      <Csslogo class="devicon-git-plain" />
-      <Htmllogo class="devicon-git-plain" />
-      <Javascriptlogo class="devicon-git-plain" />
-      <Jquerylogo class="devicon-git-plain" />
-      <Reactlogo class="devicon-git-plain" />
-      <Railslogo class="devicon-git-plain" />
-      <Nodelogo class="devicon-git-plain" />
-      <Mysqllogo class="devicon-git-plain" />
+      <div class="devicon-git-plain">
+        <Csslogo />
+        <Htmllogo />
+        <Javascriptlogo />
+        <Jquerylogo />
+        <Reactlogo />
+        <Railslogo />
+        <Nodelogo />
+        <Mysqllogo />
+      </div>
     </div>
   </div>
 )
@@ -51,10 +53,7 @@ Languages.defaultProps = {
 }
 
 const StyledLanguages = styled(Languages)`
-  color: var(--secondary-color);
   background: var(--secondary-color);
-  margin: 6rem 0;
-  padding: 6rem 0 2rem;
   margin-bottom: 1rem;
   color: black;
   text-align: center;
@@ -62,15 +61,16 @@ const StyledLanguages = styled(Languages)`
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin: 6rem -50vw 1rem;
+  padding: 6rem 0px 2rem;
   h1 {
     margin: 1em auto;
     color: black;
   }
 
   .devicon-git-plain {
-    max-width: 2em;
+    max-width: 3em;
+    margin: auto;
   }
 `
 
