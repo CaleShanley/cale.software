@@ -45,7 +45,7 @@ const StyledHero = styled(Hero)`
     margin-top: 1.5em;
     margin-bottom: 1rem;
     color: black;
-    font-size: 50px;
+    font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
