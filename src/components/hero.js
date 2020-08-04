@@ -33,7 +33,6 @@ Hero.defaultProps = {
 }
 
 const StyledHero = styled(Hero)`
-  color: var(--white);
   background: var(--white);
   padding: 1rem 0;
   margin-bottom: 3rem;
