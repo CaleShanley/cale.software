@@ -20,7 +20,32 @@ const Portfolio = ({ siteTitle, className }) => (
         quam nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
         convallis nisi bibendum suscipit ultrices. Etiam hendrerit nunc egestas
         aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
-        non, volutpat elit.
+        non, volutpat elit. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Mauris convallis eget ante semper finibus. Nunc pretium purus ac
+        felis lobortis scelerisque. Maecenas semper fringilla nibh, in
+        consectetur erat efficitur sed. Morbi vel tellus at mauris sagittis
+        tristique. Nulla a fermentum massa. Nam porta dui eget augue
+        ullamcorper, vel feugiat libero pharetra. Suspendisse potenti. Nunc sed
+        sapien feugiat, suscipit urna quis, feugiat arcu. Nam vel eleifend
+        lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Aliquam sem diam, blandit eu augue ac,
+        placerat finibus enim. In vitae quam nisl. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. In convallis nisi bibendum suscipit
+        ultrices. Etiam hendrerit nunc egestas aliquet scelerisque. Integer sit
+        amet nunc rhoncus, sollicitudin turpis non, volutpat elit. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Mauris convallis eget ante
+        semper finibus. Nunc pretium purus ac felis lobortis scelerisque.
+        Maecenas semper fringilla nibh, in consectetur erat efficitur sed. Morbi
+        vel tellus at mauris sagittis tristique. Nulla a fermentum massa. Nam
+        porta dui eget augue ullamcorper, vel feugiat libero pharetra.
+        Suspendisse potenti. Nunc sed sapien feugiat, suscipit urna quis,
+        feugiat arcu. Nam vel eleifend lectus. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sem
+        diam, blandit eu augue ac, placerat finibus enim. In vitae quam nisl.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+        nisi bibendum suscipit ultrices. Etiam hendrerit nunc egestas aliquet
+        scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis non,
+        volutpat elit.
       </p>
     </Container>
   </div>
@@ -36,10 +61,10 @@ Portfolio.defaultProps = {
 
 const StyledPortfolio = styled(Portfolio)`
   color: black;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
-  margin-top: 15em;
+  margin-top: 10em;
   h1 {
     margin: 0;
   }

@@ -5,17 +5,19 @@ import { Container } from './layoutComponents'
 const Footer = ({ className }) => (
   <footer className={className}>
     <Container>
-      © {new Date().getFullYear()}, Built with
+      © {new Date().getFullYear()} Cale Shanley, This website is made using
+      React and Gatsby. Hosted via Netlify.
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
     </Container>
   </footer>
 )
 
 const StyledFooter = styled(Footer)`
   color: #fffaff;
-  background: var(--primary-color);
+  background: black;
   padding: 1rem 0;
+  font-size: 17px;
+  text-align: center;
 `
 
 export default StyledFooter
