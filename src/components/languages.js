@@ -60,7 +60,7 @@ const StyledLanguages = styled(Languages)`
   margin: 6rem -50vw 1rem;
   padding: 3rem 0px 2rem;
   h3 {
-    margin: 1em 35em 2rem 0;
+    margin: 1em 36em 2rem 0;
     color: black;
   }
 
