@@ -3,8 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
-    --primary-color: #262626;
-    --secondary-color: #424141;
+    --primary-color: #222831;
+    --secondary-color: linear-gradient(180deg,#eee,#fafafa);;
     --white: #ffffff;
   }
   * {
@@ -65,8 +65,10 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
   }
   a {
-    background-color: transparent;
+   color: black;
     -webkit-text-decoration-skip: objects;
+    font-size: 22px;
+    font-weight: 500;
   }
   a:active,
   a:hover {

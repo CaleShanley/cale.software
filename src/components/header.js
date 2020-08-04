@@ -24,9 +24,11 @@ Header.defaultProps = {
 
 const StyledHeader = styled(Header)`
   color: var(--white);
-  background: var(--primary-color);
+  background: var(--white);
   padding: 1rem 0;
   margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 500;
   h1 {
     margin: 0;
   }
