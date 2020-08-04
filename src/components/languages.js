@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { ReactComponent as Csslogo } from '../images/svg/csslogo.svg'
 import { ReactComponent as Htmllogo } from '../images/svg/htmllogo.svg'
 import { ReactComponent as Javascriptlogo } from '../images/svg/javascriptlogo.svg'
-import { ReactComponent as Jquerylogo } from '../images/svg/jquerylogo.svg'
+import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg'
 import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg'
 import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg'
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg'
@@ -32,7 +32,7 @@ const Languages = ({ siteTitle, className }) => (
       <Csslogo />
       <Htmllogo />
       <Javascriptlogo />
-      <Jquerylogo />
+      <Npmlogo />
       <Reactlogo />
       <Railslogo />
       <Nodelogo />

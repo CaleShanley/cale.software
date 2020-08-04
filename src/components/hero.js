@@ -9,9 +9,7 @@ const Hero = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <HeroContainer>
-        <Zoom>
-          <Image />
-        </Zoom>
+        <Image />
         <Paragraph>
           <h1>I'm a Junior Web developer from Sydney looking for Work.</h1>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque
