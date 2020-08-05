@@ -1,38 +1,33 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import TicTacToe from './tictactoe'
 import ToDoList from './todolist'
-import DrinkGame from './drinkgame'
 import { Link } from 'gatsby'
 import { Container } from './layoutComponents'
 
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>My Projects:</h1>
+      <h1>Todo List:</h1>
       <PortfolioContainer>
-        <h2>Here are the Projects I've made.</h2>
+        <p>
+          Landing page for my Todo List Project - an app created with JavaScript
+          and Ruby/SQL.
+          <br />
+        </p>
         <div class="projects-wrapper">
-          <div class="project-image-drink feature">
-            <a href="/projects">
-              <DrinkGame />
-            </a>
-          </div>
-          <div class="project-image-todolist feature">
-            <a href="/projects">
-              <ToDoList />
-            </a>
-          </div>
-          <div class="project-image-tictactoe feature">
-            <a href="/projects">
-              <TicTacToe />
-            </a>
+          <div class="feature">
+            <ToDoList />
           </div>
         </div>
-        <Link class="infopage" to="/projects/">
-          More Info on Projects
-        </Link>
+        <nav>
+          <a class="info" href="https://project1-todo-list.herokuapp.com/login">
+            Live Demo
+          </a>
+          <a class="info" href="https://github.com/CaleShanley/Project1">
+            Source Code
+          </a>
+        </nav>
       </PortfolioContainer>
     </Container>
   </div>
@@ -51,25 +46,26 @@ const StyledPortfolio = styled(Portfolio)`
   background: var(--primary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
-  margin-top: 10em;
   h1 {
     margin: 1rem 0 0 4rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
-  h2 {
+  p {
     margin: 2rem 0 0 4rem;
     width: 100%;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.3;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
-  .infopage {
+  .info {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     transition: all 0.3s ease-in;
-    margin: 0 0 3rem 4rem;
+    margin: 0 0 1rem 4rem;
     &:hover {
       transform: scale(1.05);
       text-decoration: underline;
@@ -78,10 +74,10 @@ const StyledPortfolio = styled(Portfolio)`
 
   .feature {
     transition: all 0.3s ease-in;
-    margin: 2rem 6rem 3rem 0;
+    margin: 2rem 6rem 0;
     box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
     width: 400px;
-    cursor: pointer;
+
     &:hover {
       transform: scale(1.05);
     }
@@ -91,7 +87,7 @@ const StyledPortfolio = styled(Portfolio)`
 const PortfolioContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 5rem;
+  gap: 2rem;
 `
 
 export default StyledPortfolio
