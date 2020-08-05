@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import TicTacToe from './tictactoe'
 import ToDoList from './todolist'
 import DrinkGame from './drinkgame'
+import { Link } from 'gatsby'
 import { Container } from './layoutComponents'
 
 const Portfolio = ({ siteTitle, className }) => (
@@ -29,6 +30,9 @@ const Portfolio = ({ siteTitle, className }) => (
             </a>
           </div>
         </div>
+        <Link class="infopage" to="/page-2/">
+          More Info on Projects
+        </Link>
       </PortfolioContainer>
     </Container>
   </div>
@@ -61,6 +65,17 @@ const StyledPortfolio = styled(Portfolio)`
     line-height: 1.3;
   }
 
+  .infopage {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    transition: all 0.3s ease-in;
+    margin: 0 0 3rem 4rem;
+    &:hover {
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+  }
+
   .feature {
     transition: all 0.3s ease-in;
     margin: 2rem 6rem 3rem 0;
@@ -72,6 +87,7 @@ const StyledPortfolio = styled(Portfolio)`
     }
   }
 `
+
 const PortfolioContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
