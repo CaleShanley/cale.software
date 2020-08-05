@@ -96,7 +96,7 @@ const StyledPortfolio = styled(Portfolio)`
 const PortfolioContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 5rem;
+  gap: 7rem;
 `
 
 export default StyledPortfolio
