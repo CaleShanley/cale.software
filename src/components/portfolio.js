@@ -55,7 +55,7 @@ const StyledPortfolio = styled(Portfolio)`
   color: black;
   background: var(--primary-color);
   padding: 1rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   margin-top: 10em;
   h1 {
     margin: 1rem 0 0 4rem;
