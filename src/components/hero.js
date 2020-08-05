@@ -2,14 +2,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { Container } from './layoutComponents'
-import Image from '../components/image'
-import Zoom from 'react-reveal/Zoom'
+import Headshot from './headshot'
 
 const Hero = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <HeroContainer>
-        <Image />
+        <Headshot />
         <Paragraph>
           <h1>I'm a Junior Web developer from Sydney looking for Work.</h1>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque

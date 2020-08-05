@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import Hero from '../components/hero'
 import Languages from '../components/languages'
 import Portfolio from '../components/portfolio'
