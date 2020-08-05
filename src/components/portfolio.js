@@ -9,64 +9,27 @@ import { Container } from './layoutComponents'
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        convallis eget ante semper finibus. Nunc pretium purus ac felis lobortis
-        scelerisque. Maecenas semper fringilla nibh, in consectetur erat
-        efficitur sed. Morbi vel tellus at mauris sagittis tristique. Nulla a
-        fermentum massa. Nam porta dui eget augue ullamcorper, vel feugiat
-        libero pharetra. Suspendisse potenti. Nunc sed sapien feugiat, suscipit
-        urna quis, feugiat arcu. Nam vel eleifend lectus. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        Aliquam sem diam, blandit eu augue ac, placerat finibus enim. In vitae
-        quam nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-        convallis nisi bibendum suscipit ultrices. Etiam hendrerit nunc egestas
-        aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
-        non, volutpat elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Mauris convallis eget ante semper finibus. Nunc pretium purus ac
-        felis lobortis scelerisque. Maecenas semper fringilla nibh, in
-        consectetur erat efficitur sed. Morbi vel tellus at mauris sagittis
-        tristique. Nulla a fermentum massa. Nam porta dui eget augue
-        ullamcorper, vel feugiat libero pharetra. Suspendisse potenti. Nunc sed
-        sapien feugiat, suscipit urna quis, feugiat arcu. Nam vel eleifend
-        lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Aliquam sem diam, blandit eu augue ac,
-        placerat finibus enim. In vitae quam nisl. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. In convallis nisi bibendum suscipit
-        ultrices. Etiam hendrerit nunc egestas aliquet scelerisque. Integer sit
-        amet nunc rhoncus, sollicitudin turpis non, volutpat elit. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Mauris convallis eget ante
-        semper finibus. Nunc pretium purus ac felis lobortis scelerisque.
-        Maecenas semper fringilla nibh, in consectetur erat efficitur sed. Morbi
-        vel tellus at mauris sagittis tristique. Nulla a fermentum massa. Nam
-        porta dui eget augue ullamcorper, vel feugiat libero pharetra.
-        Suspendisse potenti. Nunc sed sapien feugiat, suscipit urna quis,
-        feugiat arcu. Nam vel eleifend lectus. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sem
-        diam, blandit eu augue ac, placerat finibus enim. In vitae quam nisl.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
-        nisi bibendum suscipit ultrices. Etiam hendrerit nunc egestas aliquet
-        scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis non,
-        volutpat elit.
-      </p>
-      <div class="projects-wrapper">
-        <div class="project-image-drink feature">
-          <a href="DrinkGame">
-            <DrinkGame />
-          </a>
+      <h1>My Projects:</h1>
+      <PortfolioContainer>
+        <h2>Here are the Projects I've made.</h2>
+        <div class="projects-wrapper">
+          <div class="project-image-drink feature">
+            <a href="DrinkGame">
+              <DrinkGame />
+            </a>
+          </div>
+          <div class="project-image-todolist feature">
+            <a href="ToDoList">
+              <ToDoList />
+            </a>
+          </div>
+          <div class="project-image-tictactoe feature">
+            <a href="TicTacToe">
+              <TicTacToe />
+            </a>
+          </div>
         </div>
-        <div class="project-image-todolist feature">
-          <a href="ToDoList">
-            <ToDoList />
-          </a>
-        </div>
-        <div class="project-image-tictactoe feature">
-          <a href="TicTacToe">
-            <TicTacToe />
-          </a>
-        </div>
-      </div>
+      </PortfolioContainer>
     </Container>
   </div>
 )
@@ -86,25 +49,33 @@ const StyledPortfolio = styled(Portfolio)`
   margin-bottom: 1rem;
   margin-top: 10em;
   h1 {
-    margin: 0;
+    margin: 1rem 0 0 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  h2 {
+    margin: 2rem 0 0 4rem;
+    width: 100%;
+    font-size: 28px;
+    line-height: 1.3;
   }
 
   .feature {
     transition: all 0.3s ease-in;
-
+    margin: 2rem 6rem 3rem 0;
+    box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
+    width: 400px;
+    cursor: pointer;
     &:hover {
       transform: scale(1.05);
     }
   }
-
-  .projects-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 400px;
-    box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-  }
+`
+const PortfolioContainer = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 5rem;
 `
 
 export default StyledPortfolio
