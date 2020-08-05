@@ -13,7 +13,7 @@ const Header = ({ siteTitle, className }) => (
         </h1>
         <div class="navlinks">
           <div class="feature">
-            <a class="navsize" href="/skills">
+            <a class="navsize" href="#skills">
               Skills
             </a>
           </div>

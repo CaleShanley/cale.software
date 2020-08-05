@@ -12,7 +12,12 @@ const Portfolio = ({ siteTitle, className }) => (
     <Container>
       <h1>My Projects:</h1>
       <PortfolioContainer>
-        <h2>Here are the Projects I've made.</h2>
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+          dolorum optio exercitationem nulla qui voluptatibus, tempore unde
+          itaque. Quam, soluta consequuntur odit animi nisi commodi dolores
+          dicta aliquam ea aliquid.
+        </h2>
         <div class="projects-wrapper">
           <div class="project-image-drink feature">
             <a href="/projects">

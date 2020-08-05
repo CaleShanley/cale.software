@@ -15,7 +15,7 @@ const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <Paragraph>
-        <h3>Some of My Skills:</h3>
+        <h3 id="skills">Some of My Skills:</h3>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
         convallis eget ante semper finibus. Nunc pretium purus ac felis lobortis
         scelerisque. Maecenas semper fringilla nibh, in consectetur erat
@@ -30,6 +30,7 @@ const Languages = ({ siteTitle, className }) => (
         aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
         non, volutpat elit.
       </Paragraph>
+
       <div class="devicon">
         <Csslogo />
         <Htmllogo />
@@ -65,6 +66,14 @@ const StyledLanguages = styled(Languages)`
   h3 {
     color: black;
     margin-bottom: 1rem;
+  }
+
+  scroll-container {
+    display: block;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
 
   .devicon {

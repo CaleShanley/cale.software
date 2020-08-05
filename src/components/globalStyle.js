@@ -15,10 +15,14 @@ export const GlobalStyle = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
-    over-flow: hidden;
+    overflow: hidden;
   }
+
   body {
+    scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   main {
     flex: 1 0 auto;

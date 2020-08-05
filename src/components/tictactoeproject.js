@@ -8,7 +8,7 @@ import { Container } from './layoutComponents'
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>Todo List:</h1>
+      <h1>TicTacToe:</h1>
       <PortfolioContainer>
         <p>
           This one was my very first Project when I had started at General
