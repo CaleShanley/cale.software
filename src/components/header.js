@@ -69,12 +69,10 @@ const StyledHeader = styled(Header)`
     }
 
     .feature {
-      transition: all 0.3s ease-in;
       display: inline-flex;
 
       cursor: pointer;
       &:hover {
-        transform: scale(1.05);
         text-decoration: underline;
       }
     }

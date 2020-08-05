@@ -73,10 +73,9 @@ const StyledPortfolio = styled(Portfolio)`
   .infopage {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    transition: all 0.3s ease-in;
+
     margin: 0 0 3rem 4rem;
     &:hover {
-      transform: scale(1.05);
       text-decoration: underline;
     }
   }

@@ -18,6 +18,8 @@ const StyledFooter = styled(Footer)`
   padding: 1rem 0;
   font-size: 17px;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
 
 export default StyledFooter
