@@ -73,7 +73,7 @@ const StyledPortfolio = styled(Portfolio)`
   .infopage {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+    color: black;
     margin: 0 0 3rem 4rem;
     &:hover {
       text-decoration: underline;
