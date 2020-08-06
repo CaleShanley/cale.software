@@ -1,4 +1,4 @@
-# Gatsby starter using styled-components 💅
+# My Portfolio
 
 Live Demo: [cale.software](https://cale.software/)
 
