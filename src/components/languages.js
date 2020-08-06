@@ -1,22 +1,21 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import styled from 'styled-components'
-import { Container } from './layoutComponents'
-import { ReactComponent as Csslogo } from '../images/svg/csslogo.svg'
-import { ReactComponent as Htmllogo } from '../images/svg/htmllogo.svg'
-import { ReactComponent as Javascriptlogo } from '../images/svg/javascriptlogo.svg'
-import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg'
-import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg'
-import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg'
-import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg'
-import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg'
-import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg'
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+import { Container } from './layoutComponents';
+import { ReactComponent as Csslogo } from '../images/svg/csslogo.svg';
+import { ReactComponent as Htmllogo } from '../images/svg/htmllogo.svg';
+import { ReactComponent as Javascriptlogo } from '../images/svg/javascriptlogo.svg';
+import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg';
+import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg';
+import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
+import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
+import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
+import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <h3>Some of My Skills:</h3>
-
       <DeviconWrapper>
         <Csslogo />
         <Htmllogo />
@@ -52,15 +51,7 @@ const Languages = ({ siteTitle, className }) => (
       </Paragraph>
     </Container>
   </div>
-)
-
-Languages.propTypes = {
-  siteTitle: PropTypes.string
-}
-
-Languages.defaultProps = {
-  siteTitle: ``
-}
+);
 
 const StyledLanguages = styled(Languages)`
   background: var(--secondary-color);
@@ -85,7 +76,7 @@ const StyledLanguages = styled(Languages)`
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
-`
+`;
 
 const DeviconWrapper = styled.div`
   max-width: 100%;
@@ -94,19 +85,19 @@ const DeviconWrapper = styled.div`
   grid-gap: 3rem;
   align-items: center;
   margin: 4rem 5em 4rem 5em;
-`
+`;
 
 const FrontEndDiv = styled.div`
   margin-right: 3rem;
-`
+`;
 
-const BackEndDiv = styled.div``
+const BackEndDiv = styled.div``;
 
 const SkillsWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin: 3rem 0 3rem 0;
-`
+`;
 
 const Paragraph = styled.p`
   color: grey;
@@ -114,6 +105,6 @@ const Paragraph = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-`
+`;
 
-export default StyledLanguages
+export default StyledLanguages;

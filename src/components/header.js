@@ -8,9 +8,9 @@ const Header = ({ siteTitle, className }) => (
   <header className={className}>
     <Container>
       <NavMenu>
-        <h1>
+        <Title>
           <Link to="/">{siteTitle}</Link>
-        </h1>
+        </Title>
         <NavLinks>
           <FeatureDiv>
             <a href="/projects">Projects</a>
@@ -21,23 +21,11 @@ const Header = ({ siteTitle, className }) => (
   </header>
 );
 
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
-};
-
 const StyledHeader = styled(Header)`
   color: var(--white);
   background: var(--white);
   padding: 1rem 0;
   align-content: center;
-  h1 {
-    margin-right: 53rem;
-    font-size: 22px;
-  }
 
   a {
     font-size: 20px;
@@ -50,6 +38,11 @@ const FeatureDiv = styled.div`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const Title = styled.h1`
+  margin-right: 53rem;
+  font-size: 22px;
 `;
 
 const NavLinks = styled.div`

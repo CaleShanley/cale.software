@@ -7,7 +7,7 @@ import { Container } from './layoutComponents';
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>Drinking Game:</h1>
+      <Title>Drinking Game:</Title>
       <PortfolioContainer>
         <div>
           <p>
@@ -46,12 +46,6 @@ const StyledPortfolio = styled(Portfolio)`
   padding: 1rem 0;
   margin-bottom: 1rem;
 
-  h1 {
-    margin: 1rem 0 0 4rem;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
-
   p {
     margin: 2rem 0 0 4rem;
     width: 100%;
@@ -82,6 +76,11 @@ const FeatureDiv = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+`;
+const Title = styled.h1`
+  margin: 1rem 0 0 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `;
 
 const ProjectsWrapper = styled.div``;

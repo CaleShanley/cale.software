@@ -51,14 +51,18 @@ const HeroContainer = styled.div`
   padding: 1rem 0;
   margin-bottom: 3rem;
   margin-top: 1em;
+  margin-right: 2rem;
   font-size: 20px;
   word-spacing: 2px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
   display: grid;
   grid-template-columns: 1.3fr 2fr;
   gap: 5rem;
+
+  p {
+    margin-right: 3rem;
+  }
 `;
 
 const Paragraph = styled.p`
