@@ -1,40 +1,36 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
-import styled from 'styled-components'
-import { Container } from './layoutComponents'
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
+import { Container } from './layoutComponents';
 
 const Header = ({ siteTitle, className }) => (
   <header className={className}>
     <Container>
-      <nav class="navmenu">
+      <NavMenu>
         <h1>
           <Link to="/">{siteTitle}</Link>
         </h1>
-        <div class="navlinks">
-          <div class="feature">
-            <a class="navsize" href="/projects">
-              Projects
-            </a>
-          </div>
-          <div class="feature">
-            <a class="navsize" href="/contact">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
+        <NavLinks>
+          <FeatureDiv>
+            <a href="/projects">Projects</a>
+          </FeatureDiv>
+          <FeatureDiv>
+            <a href="/contact">Contact</a>
+          </FeatureDiv>
+        </NavLinks>
+      </NavMenu>
     </Container>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``
-}
+};
 
 const StyledHeader = styled(Header)`
   color: var(--white);
@@ -46,37 +42,36 @@ const StyledHeader = styled(Header)`
     font-size: 22px;
   }
 
-  .navmenu {
-    display: flex;
-    margin-left: 0%;
-    margin-top: 0%;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1;
-    line-height: 1.1;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-    .navlinks {
-      margin-bottom: 1.4rem;
-      margin-right: 10px;
-    }
-
-    .feature {
-      display: inline-flex;
-
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  a.navsize {
+  a {
     font-size: 20px;
     margin-left: 2rem;
   }
-`
+`;
 
-export default StyledHeader
+const FeatureDiv = styled.div`
+  display: inline-flex;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const NavLinks = styled.div`
+  margin-bottom: 1.4rem;
+  margin-right: 10px;
+`;
+
+const NavMenu = styled.nav`
+  display: flex;
+  margin-left: 0%;
+  margin-top: 0%;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  line-height: 1.1;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+`;
+
+export default StyledHeader;

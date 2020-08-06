@@ -17,7 +17,7 @@ const Languages = ({ siteTitle, className }) => (
     <Container>
       <h3>Some of My Skills:</h3>
 
-      <div class="devicon">
+      <DeviconWrapper>
         <Csslogo />
         <Htmllogo />
         <Javascriptlogo />
@@ -27,10 +27,10 @@ const Languages = ({ siteTitle, className }) => (
         <Railslogo />
         <Nodelogo />
         <Mysqllogo />
-      </div>
+      </DeviconWrapper>
       <Paragraph>
-        <div class="wrapper">
-          <div class="front-end">
+        <SkillsWrapper>
+          <FrontEndDiv>
             <h3>Font End Development</h3>
             <p>
               My code is always structured and thought out. I use all the latest
@@ -38,8 +38,8 @@ const Languages = ({ siteTitle, className }) => (
               responsive. I also implement the principal of DRY (Don't repeat
               yourself) when developing any website.
             </p>
-          </div>
-          <div class="back-end">
+          </FrontEndDiv>
+          <BackEndDiv>
             <h3>Back End Development</h3>
             <p>
               Although invisible, this is one of the most important steps in any
@@ -47,8 +47,8 @@ const Languages = ({ siteTitle, className }) => (
               and Ruby. I am also familar with databases such as MySQL and
               PostgreSQL.
             </p>
-          </div>
-        </div>
+          </BackEndDiv>
+        </SkillsWrapper>
       </Paragraph>
     </Container>
   </div>
@@ -65,13 +65,13 @@ Languages.defaultProps = {
 const StyledLanguages = styled(Languages)`
   background: var(--secondary-color);
   margin-bottom: 1rem;
-
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin: 6rem -50vw 1rem;
   padding: 3rem 0px 2rem;
+
   h3 {
     color: black;
     margin-bottom: 1rem;
@@ -85,24 +85,27 @@ const StyledLanguages = styled(Languages)`
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 3rem 0 3rem 0;
-  }
+`
 
-  .front-end {
-    margin-right: 3rem;
-  }
+const DeviconWrapper = styled.div`
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-gap: 3rem;
+  align-items: center;
+  margin: 4rem 5em 4rem 5em;
+`
 
-  .devicon {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-gap: 3rem;
-    align-items: center;
-    margin: 4rem 5em 4rem 5em;
-  }
+const FrontEndDiv = styled.div`
+  margin-right: 3rem;
+`
+
+const BackEndDiv = styled.div``
+
+const SkillsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 3rem 0;
 `
 
 const Paragraph = styled.p`
