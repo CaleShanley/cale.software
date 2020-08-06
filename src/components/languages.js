@@ -14,22 +14,7 @@ import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg'
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <Paragraph>
-        <h3 id="skills">Some of My Skills:</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        convallis eget ante semper finibus. Nunc pretium purus ac felis lobortis
-        scelerisque. Maecenas semper fringilla nibh, in consectetur erat
-        efficitur sed. Morbi vel tellus at mauris sagittis tristique. Nulla a
-        fermentum massa. Nam porta dui eget augue ullamcorper, vel feugiat
-        libero pharetra. Suspendisse potenti. Nunc sed sapien feugiat, suscipit
-        urna quis, feugiat arcu. Nam vel eleifend lectus. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        Aliquam sem diam, blandit eu augue ac, placerat finibus enim. In vitae
-        quam nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-        convallis nisi bibendum suscipit ultrices. Etiam hendrerit nunc egestas
-        aliquet scelerisque. Integer sit amet nunc rhoncus, sollicitudin turpis
-        non, volutpat elit.
-      </Paragraph>
+      <h3 id="skills">Some of My Skills:</h3>
 
       <div class="devicon">
         <Csslogo />
@@ -41,6 +26,28 @@ const Languages = ({ siteTitle, className }) => (
         <Nodelogo />
         <Mysqllogo />
       </div>
+      <Paragraph>
+        <div class="wrapper">
+          <div class="skill1">
+            <h3>Font End Development</h3>
+            <p>
+              My code is always structured and thought out. I use all the latest
+              CSS, HTML and JavaScript to ensure that the designs are
+              responsive. I also implement the principal of DRY (Don't repeat
+              yourself) when developing any app.
+            </p>
+          </div>
+          <div class="skill2">
+            <h3>Back End Development</h3>
+            <p>
+              Although invisible, this is one of the most important steps in any
+              web-based project. I have learnt to build backend work using
+              Node,Ruby and MySQL. I use the same principal of DRY and make sure
+              that all code is secure and well structured.
+            </p>
+          </div>
+        </div>
+      </Paragraph>
     </Container>
   </div>
 )
@@ -56,7 +63,7 @@ Languages.defaultProps = {
 const StyledLanguages = styled(Languages)`
   background: var(--secondary-color);
   margin-bottom: 1rem;
-  /* text-align: center; */
+
   width: 100vw;
   position: relative;
   left: 50%;
@@ -66,6 +73,7 @@ const StyledLanguages = styled(Languages)`
   h3 {
     color: black;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   scroll-container {
@@ -75,6 +83,15 @@ const StyledLanguages = styled(Languages)`
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0 3rem 0;
+  }
+
+  .skill1 {
+    margin-right: 3rem;
+  }
 
   .devicon {
     max-width: 100%;
@@ -82,15 +99,16 @@ const StyledLanguages = styled(Languages)`
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     grid-gap: 3rem;
     align-items: center;
-    margin: 1rem 5em 0 5em;
+    margin: 4rem 5em 4rem 5em;
   }
 `
 
 const Paragraph = styled.p`
   color: grey;
-  font-size: 22px;
+  font-size: 18px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
 `
 
 export default StyledLanguages

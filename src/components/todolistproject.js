@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import ToDoList from './todolist'
-import { Link } from 'gatsby'
 import { Container } from './layoutComponents'
 
 const Portfolio = ({ siteTitle, className }) => (

@@ -10,11 +10,10 @@ const Hero = ({ siteTitle, className }) => (
       <HeroContainer>
         <Headshot />
         <Paragraph>
-          <h1>I'm a Junior Web developer from Sydney looking for Work.</h1>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde itaque
-          commodi reprehenderit eligendi tempore corporis tempora, laboriosam
-          ullam nulla praesentium delectus maiores sunt incidunt quas libero at
-          natus minima dolore.
+          <h1>I'm a Junior Web developer from Sydney.</h1>
+          Over the past 4 months, I've gained a ton of new experience studying
+          through General Assembly's Software Engineering immersive course. I'm
+          passionate, motivated and excited for my future in the industry.
         </Paragraph>
       </HeroContainer>
     </Container>
@@ -35,7 +34,9 @@ const StyledHero = styled(Hero)`
   margin-bottom: 3rem;
   margin-top: 1em;
   font-size: 25px;
-  word-spacing: 4px;
+  word-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   h1 {
     margin: 0;

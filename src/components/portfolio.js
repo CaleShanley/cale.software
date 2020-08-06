@@ -12,13 +12,11 @@ const Portfolio = ({ siteTitle, className }) => (
     <Container>
       <h1>My Projects:</h1>
       <PortfolioContainer>
-        <h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-          dolorum optio exercitationem nulla qui voluptatibus, tempore unde
-          itaque. Quam, soluta consequuntur odit animi nisi commodi dolores
-          dicta aliquam ea aliquid.
-        </h2>
         <div class="projects-wrapper">
+          <h2>
+            These are the Projects I've completed while at General Assembly
+          </h2>
+
           <div class="project-image-drink feature">
             <a href="/projects">
               <DrinkGame />
@@ -68,8 +66,13 @@ const StyledPortfolio = styled(Portfolio)`
     width: 100%;
     font-size: 28px;
     line-height: 1.3;
+    display: inline-block;
   }
-
+  .projects-wrapper {
+    display: flex;
+    flex: column;
+    justify-content: space-around;
+  }
   .infopage {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -93,9 +96,9 @@ const StyledPortfolio = styled(Portfolio)`
 `
 
 const PortfolioContainer = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 7rem;
+  gap: 8rem; */
 `
 
 export default StyledPortfolio
