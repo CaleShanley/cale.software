@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { Container } from './layoutComponents'
+import { ReactComponent as Githublogo } from '../images/svg/githublogo.svg'
+import { ReactComponent as Linkedinlogo } from '../images/svg/linkedinlogo.svg'
 import Headshot from './headshot'
 
 const Hero = ({ siteTitle, className }) => (
@@ -14,6 +16,18 @@ const Hero = ({ siteTitle, className }) => (
           Over the past 4 months, I've gained a ton of new experience studying
           through General Assembly's Software Engineering immersive course. I'm
           passionate, motivated and excited for my future in the industry.
+          <div class="devicon-wrapper">
+            <div class="githublogo">
+              <a href="https://github.com/CaleShanley">
+                <Githublogo />
+              </a>
+            </div>
+            <div class="linkedinlogo">
+              <a href="https://www.linkedin.com/in/caleshanley/">
+                <Linkedinlogo />
+              </a>
+            </div>
+          </div>
         </Paragraph>
       </HeroContainer>
     </Container>
@@ -46,6 +60,15 @@ const StyledHero = styled(Hero)`
     font-size: 45px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .devicon-wrapper {
+    max-width: 2rem;
+    margin-top: 2rem;
+  }
+
+  .githublogo {
+    margin-bottom: 1rem;
   }
 `
 

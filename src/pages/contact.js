@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 
 import { Container } from '../components/layoutComponents'
 
-const ProjectsPage = () => (
+const ContactPage = () => (
   <Layout>
     <Container>
       <SEO title="Page two" />
@@ -18,4 +18,4 @@ const ProjectsPage = () => (
   </Layout>
 )
 
-export default ProjectsPage
+export default ContactPage

@@ -14,7 +14,7 @@ import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg'
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h3 id="skills">Some of My Skills:</h3>
+      <h3>Some of My Skills:</h3>
 
       <div class="devicon">
         <Csslogo />
@@ -28,7 +28,7 @@ const Languages = ({ siteTitle, className }) => (
       </div>
       <Paragraph>
         <div class="wrapper">
-          <div class="skill1">
+          <div class="front-end">
             <h3>Font End Development</h3>
             <p>
               My code is always structured and thought out. I use all the latest
@@ -37,13 +37,13 @@ const Languages = ({ siteTitle, className }) => (
               yourself) when developing any app.
             </p>
           </div>
-          <div class="skill2">
+          <div class="back-end">
             <h3>Back End Development</h3>
             <p>
               Although invisible, this is one of the most important steps in any
-              web-based project. I have learnt to build backend work using
-              Node,Ruby and MySQL. I use the same principal of DRY and make sure
-              that all code is secure and well structured.
+              web-based project. I have learnt to build backend work using Node
+              and Ruby. I am also familar with databases such as MySQL and
+              PostgreSQL.
             </p>
           </div>
         </div>
@@ -89,7 +89,7 @@ const StyledLanguages = styled(Languages)`
     margin: 3rem 0 3rem 0;
   }
 
-  .skill1 {
+  .front-end {
     margin-right: 3rem;
   }
 
