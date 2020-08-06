@@ -1,8 +1,8 @@
 # Gatsby starter using styled-components 💅
 
-Live Demo: [cale.software](https://cale.software/).
+Live Demo: [cale.software](https://cale.software/)
 
-## 🚀 Quick start
+## 🚀 Clone Me
 
 1.  **Clone this repository**
 
