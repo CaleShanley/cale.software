@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Container } from './layoutComponents'
 import { ReactComponent as Githublogo } from '../images/svg/githublogo.svg'
 import { ReactComponent as Linkedinlogo } from '../images/svg/linkedinlogo.svg'
+import { ReactComponent as Envelope } from '../images/svg/envelope.svg'
 import Headshot from './headshot'
 
 const Hero = ({ siteTitle, className }) => (
