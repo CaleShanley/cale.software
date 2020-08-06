@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ReactComponent as Githublogo } from '../images/svg/githublogo.svg'
 import { ReactComponent as Linkedinlogo } from '../images/svg/linkedinlogo.svg'
+import { ReactComponent as Envelope } from '../images/svg/envelope.svg'
 import { Container } from './layoutComponents'
 
 const Languages = ({ siteTitle, className }) => (
@@ -10,20 +11,23 @@ const Languages = ({ siteTitle, className }) => (
     <Container>
       <h3>Have any Questions?</h3>
       <Paragraph>
-        <p>Email: caleshanley.0@gmail.com</p>
-        <div class="devicon-wrapper">
-          <div class="githublogo">
-            <a href="https://github.com/CaleShanley">
-              <Githublogo />
-            </a>
-          </div>
-          <div class="linkedinlogo">
-            <a href="https://www.linkedin.com/in/caleshanley/">
-              <Linkedinlogo />
-            </a>
-          </div>
+        <div>
+          <Envelope />
+          <p>caleshanley.0@gmail.com</p>
         </div>
       </Paragraph>
+      <div class="devicon-wrapper">
+        <div class="githublogo">
+          <a href="https://github.com/CaleShanley">
+            <Githublogo />
+          </a>
+        </div>
+        <div class="linkedinlogo">
+          <a href="https://www.linkedin.com/in/caleshanley/">
+            <Linkedinlogo />
+          </a>
+        </div>
+      </div>
     </Container>
   </div>
 )
