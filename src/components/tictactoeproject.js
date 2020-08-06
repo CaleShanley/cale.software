@@ -13,7 +13,6 @@ const Portfolio = ({ siteTitle, className }) => (
           This one was my very first Project when I had started at General
           Assembly. This is the landing page for my TicTacToe Project - an app
           created in JavaScript, HTML and CSS.
-          <br />
         </p>
         <div class="projects-wrapper">
           <div class="feature">

@@ -9,12 +9,13 @@ const Portfolio = ({ siteTitle, className }) => (
     <Container>
       <h1>Drinking Game:</h1>
       <PortfolioContainer>
-        <p>
-          Landing page for our Game Project - an app created with React and
-          Firebase.
-          <br />
-          <div class="groupinfo">(This was a Group Project)</div>
-        </p>
+        <div>
+          <p>
+            Landing page for our Game Project - an app created with React and
+            Firebase.
+          </p>
+          <p class="groupinfo">(This was a Group Project)</p>
+        </div>
         <div class="projects-wrapper">
           <div class="feature">
             <DrinkGame />

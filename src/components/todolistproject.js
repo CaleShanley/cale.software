@@ -12,7 +12,6 @@ const Portfolio = ({ siteTitle, className }) => (
         <p>
           Landing page for my Todo List Project - an app created with JavaScript
           and Ruby/SQL.
-          <br />
         </p>
         <div class="projects-wrapper">
           <div class="feature">
