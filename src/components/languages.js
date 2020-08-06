@@ -10,6 +10,7 @@ import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg'
 import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg'
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg'
 import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg'
+import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg'
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
@@ -21,6 +22,7 @@ const Languages = ({ siteTitle, className }) => (
         <Htmllogo />
         <Javascriptlogo />
         <Npmlogo />
+        <Gitlogo />
         <Reactlogo />
         <Railslogo />
         <Nodelogo />

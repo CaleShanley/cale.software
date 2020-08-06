@@ -13,7 +13,7 @@ const Hero = ({ siteTitle, className }) => (
         <Headshot />
         <Paragraph>
           <h1>I'm a Junior Web developer from Sydney.</h1>
-          Over the past 4 months, I've gained a ton of new experience studying
+          Over the past 4 months, I've gained a ton of experience studying
           through General Assembly's Software Engineering immersive course. I'm
           passionate, motivated and excited for my future in the industry.
           <div class="devicon-wrapper">
@@ -47,7 +47,7 @@ const StyledHero = styled(Hero)`
   padding: 1rem 0;
   margin-bottom: 3rem;
   margin-top: 1em;
-  font-size: 25px;
+  font-size: 20px;
   word-spacing: 2px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
