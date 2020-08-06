@@ -36,6 +36,7 @@ const Headshot = () => (
 
 const Image = styled(Img)`
   width: 100%;
+  max-width: 433px;
 `;
 
 export default Headshot;

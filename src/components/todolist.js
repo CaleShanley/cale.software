@@ -18,7 +18,7 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "todoimage.png" }) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -28,7 +28,6 @@ const Image = () => (
     render={(data) => (
       <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
-        style={{ 'max-width': '400px' }}
       />
     )}
   />

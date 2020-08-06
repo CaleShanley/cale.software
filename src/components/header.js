@@ -41,7 +41,6 @@ const FeatureDiv = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-right: 53rem;
   font-size: 22px;
 `;
 
@@ -52,11 +51,9 @@ const NavLinks = styled.div`
 
 const NavMenu = styled.nav`
   display: flex;
-  margin-left: 0%;
-  margin-top: 0%;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  flex: 1;
   line-height: 1.1;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

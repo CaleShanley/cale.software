@@ -81,7 +81,9 @@ const StyledPortfolio = styled(Portfolio)`
   }
 `;
 
-const ProjectsWrapper = styled.div``;
+const ProjectsWrapper = styled.div`
+  display: flex
+`;
 
 const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
@@ -102,9 +104,8 @@ const LinkInfoDiv = styled.div`
 `;
 
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 7rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default StyledPortfolio;
