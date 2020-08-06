@@ -14,7 +14,7 @@ const Portfolio = ({ siteTitle, className }) => (
       <PortfolioContainer>
         <div>
           <h2>
-            These are the Projects I've completed while at General Assembly
+            These are the Projects I've completed while at General Assembly.
           </h2>
           <LinkInfoDiv>
             <Link to="/projects/">More Info on Projects</Link>
@@ -56,6 +56,7 @@ const StyledPortfolio = styled(Portfolio)`
   padding: 1rem 0;
   margin-bottom: 5rem;
   margin-top: 10em;
+
   h1 {
     margin: 1rem 0 0 4rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -70,11 +71,10 @@ const StyledPortfolio = styled(Portfolio)`
   }
 
   a {
-    font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: black;
-    margin: 0 0 3rem 4rem;
+
     &:hover {
       text-decoration: underline;
     }
@@ -89,6 +89,7 @@ const FeatureLogo = styled.div`
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 400px;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.05);
   }
@@ -96,6 +97,8 @@ const FeatureLogo = styled.div`
 
 const LinkInfoDiv = styled.div`
   margin-top: 2rem;
+  margin-left: 4rem;
+  font-size: 20px;
 `;
 
 const PortfolioContainer = styled.div`

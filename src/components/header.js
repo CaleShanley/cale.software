@@ -15,9 +15,6 @@ const Header = ({ siteTitle, className }) => (
           <FeatureDiv>
             <a href="/projects">Projects</a>
           </FeatureDiv>
-          <FeatureDiv>
-            <a href="/contact">Contact</a>
-          </FeatureDiv>
         </NavLinks>
       </NavMenu>
     </Container>
@@ -38,13 +35,12 @@ const StyledHeader = styled(Header)`
   padding: 1rem 0;
   align-content: center;
   h1 {
-    margin-right: 43rem;
+    margin-right: 53rem;
     font-size: 22px;
   }
 
   a {
     font-size: 20px;
-    margin-left: 2rem;
   }
 `;
 
