@@ -36,7 +36,7 @@ const Languages = ({ siteTitle, className }) => (
               My code is always structured and thought out. I use all the latest
               CSS, HTML and JavaScript to ensure that the designs are
               responsive. I also implement the principal of DRY (Don't repeat
-              yourself) when developing any app.
+              yourself) when developing any website.
             </p>
           </div>
           <div class="back-end">
