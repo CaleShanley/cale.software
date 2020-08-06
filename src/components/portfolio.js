@@ -12,11 +12,17 @@ const Portfolio = ({ siteTitle, className }) => (
     <Container>
       <h1>My Projects:</h1>
       <PortfolioContainer>
-        <div class="projects-wrapper">
+        <div>
           <h2>
             These are the Projects I've completed while at General Assembly
           </h2>
-
+          <div class="link-info">
+            <Link class="infopage" to="/projects/">
+              More Info on Projects
+            </Link>
+          </div>
+        </div>
+        <div class="projects-wrapper">
           <div class="project-image-drink feature">
             <a href="/projects">
               <DrinkGame />
@@ -33,9 +39,6 @@ const Portfolio = ({ siteTitle, className }) => (
             </a>
           </div>
         </div>
-        <Link class="infopage" to="/projects/">
-          More Info on Projects
-        </Link>
       </PortfolioContainer>
     </Container>
   </div>
@@ -66,14 +69,14 @@ const StyledPortfolio = styled(Portfolio)`
     width: 100%;
     font-size: 28px;
     line-height: 1.3;
-    display: inline-block;
   }
-  .projects-wrapper {
-    display: flex;
-    flex: column;
-    justify-content: space-around;
+
+  .link-info {
+    margin-top: 2rem;
   }
+
   .infopage {
+    font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: black;
@@ -96,9 +99,9 @@ const StyledPortfolio = styled(Portfolio)`
 `
 
 const PortfolioContainer = styled.div`
-  /* display: grid;
+  display: grid;
   grid-template-columns: 2fr 2fr;
-  gap: 8rem; */
+  gap: 7rem;
 `
 
 export default StyledPortfolio
