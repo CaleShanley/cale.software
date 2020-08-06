@@ -20,8 +20,8 @@ const Image = () => (
           relativePath: { eq: "cale_headshot_b_w-removebg-preview (1) (8).png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 443) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
