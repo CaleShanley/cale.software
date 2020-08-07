@@ -25,9 +25,7 @@ Live Demo: [cale.software](https://cale.software/)
 
 **Clone this repository**
 
-    ```sh
-    git clone https://github.com/CaleShanley/cale.software.git
-    ```
+    ```git clone https://github.com/CaleShanley/cale.software.git```
 
 ## 🧐 About this Project
 
