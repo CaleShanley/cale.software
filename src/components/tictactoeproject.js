@@ -20,8 +20,19 @@ const Portfolio = ({ siteTitle, className }) => (
           </FeatureDiv>
         </ProjectsWrapper>
         <nav>
-          <a href="https://caleshanley.github.io/project0/">Live Demo</a>
-          <a class="info" href="https://github.com/CaleShanley/project0">
+          <a
+            href="https://caleshanley.github.io/project0/"
+            target="_blank"
+            rel="nofollow"
+          >
+            Live Demo
+          </a>
+          <a
+            class="info"
+            href="https://github.com/CaleShanley/project0"
+            target="_blank"
+            rel="nofollow"
+          >
             Source Code
           </a>
         </nav>

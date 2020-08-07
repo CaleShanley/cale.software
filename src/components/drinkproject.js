@@ -22,8 +22,18 @@ const Portfolio = ({ siteTitle, className }) => (
           </FeatureDiv>
         </ProjectsWrapper>
         <nav>
-          <a href="https://drinking-game-663f5.web.app/">Live Demo</a>
-          <a href="https://github.com/CaleShanley/project2-client">
+          <a
+            href="https://drinking-game-663f5.web.app/"
+            target="_blank"
+            rel="nofollow"
+          >
+            Live Demo
+          </a>
+          <a
+            href="https://github.com/CaleShanley/project2-client"
+            target="_blank"
+            rel="nofollow"
+          >
             Source Code
           </a>
         </nav>

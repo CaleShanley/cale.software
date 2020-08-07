@@ -19,8 +19,20 @@ const Portfolio = ({ siteTitle, className }) => (
           </FeatureDiv>
         </ProjectsWrapper>
         <nav>
-          <a href="https://project1-todo-list.herokuapp.com/login">Live Demo</a>
-          <a href="https://github.com/CaleShanley/Project1">Source Code</a>
+          <a
+            href="https://project1-todo-list.herokuapp.com/login"
+            target="_blank"
+            rel="nofollow"
+          >
+            Live Demo
+          </a>
+          <a
+            href="https://github.com/CaleShanley/Project1"
+            target="_blank"
+            rel="nofollow"
+          >
+            Source Code
+          </a>
         </nav>
       </PortfolioContainer>
     </Container>

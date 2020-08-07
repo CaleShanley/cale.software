@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as Githublogo } from '../images/svg/githublogo.svg';
