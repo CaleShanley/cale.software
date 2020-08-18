@@ -76,18 +76,19 @@ const StyledLanguages = styled(Languages)`
 `;
 
 const DeviconWrapper = styled.div`
-  max-width: 100%;
+  width: 100%;
   margin: 3rem 0 1rem 0;
   min-height: 10rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 `;
 
 const RowDiv = styled.div`
-  width: 4rem;
-  margin: 1rem 2rem 2rem;
-  justify-content: space-between;
+  width: 10rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
 `;
 
 const FrontEndDiv = styled.div`
@@ -99,7 +100,7 @@ const BackEndDiv = styled.div``;
 const SkillsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 3rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
 `;
 
 const Paragraph = styled.p`
