@@ -85,7 +85,7 @@ const ProjectsWrapper = styled.div``;
 
 const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
-  margin: 2rem 6rem 3rem 0;
+  margin: 2rem 0 3rem 2rem;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 400px;
   min-height: 200px;
@@ -109,7 +109,9 @@ const TextDiv = styled.div`
 
 const PortfolioContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
 `;
 
 export default StyledPortfolio;

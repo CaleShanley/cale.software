@@ -67,34 +67,27 @@ const StyledLanguages = styled(Languages)`
     margin-bottom: 1rem;
     text-align: center;
   }
-
-  scroll-container {
-    display: block;
-    width: 350px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
 `;
 
 const DeviconWrapper = styled.div`
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  grid-gap: 3rem;
+  grid-template-columns: 4rem 4rem 4rem;
+  grid-gap: 2rem;
   align-items: center;
   margin: 4rem 5em 4rem 5em;
+  padding-left: 19rem;
 `;
 
 const FrontEndDiv = styled.div`
-  margin-right: 3rem;
+  margin-bottom: 2rem;
 `;
 
 const BackEndDiv = styled.div``;
 
 const SkillsWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 3rem 0 3rem 0;
 `;
 
