@@ -88,6 +88,7 @@ const FeatureLogo = styled.div`
   margin: 2rem 6rem 3rem 0;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 400px;
+  min-height: 200px;
   cursor: pointer;
 
   &:hover {
