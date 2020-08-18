@@ -74,9 +74,8 @@ const DeviconWrapper = styled.div`
   display: grid;
   grid-template-columns: 4rem 4rem 4rem;
   grid-gap: 2rem;
-  align-items: center;
+  justify-content: center;
   margin: 4rem 5em 4rem 5em;
-  padding-left: 19rem;
 `;
 
 const FrontEndDiv = styled.div`
