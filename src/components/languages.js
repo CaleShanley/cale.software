@@ -8,23 +8,29 @@ import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg';
 import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg';
 import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
-import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
 import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
+import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <h3>Some of My Skills:</h3>
       <DeviconWrapper>
-        <Csslogo />
-        <Htmllogo />
-        <Javascriptlogo />
-        <Npmlogo />
-        <Gitlogo />
-        <Reactlogo />
-        <Railslogo />
-        <Nodelogo />
-        <Mysqllogo />
+        <RowDiv>
+          <Csslogo />
+          <Htmllogo />
+          <Javascriptlogo />
+        </RowDiv>
+        <RowDiv>
+          <Npmlogo />
+          <Gitlogo />
+          <Reactlogo />
+        </RowDiv>
+        <RowDiv>
+          <Railslogo />
+          <Nodelogo />
+          <Mysqllogo />
+        </RowDiv>
       </DeviconWrapper>
       <Paragraph>
         <SkillsWrapper>
@@ -71,11 +77,17 @@ const StyledLanguages = styled(Languages)`
 
 const DeviconWrapper = styled.div`
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 4rem 4rem 4rem;
-  grid-gap: 4rem;
+  margin: 3rem 0 1rem 0;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 3rem auto;
+`;
+
+const RowDiv = styled.div`
+  width: 4rem;
+  margin: 1rem 2rem 2rem;
+  justify-content: space-between;
 `;
 
 const FrontEndDiv = styled.div`
