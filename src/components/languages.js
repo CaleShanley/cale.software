@@ -77,7 +77,6 @@ const StyledLanguages = styled(Languages)`
 
 const DeviconWrapper = styled.div`
   width: 100%;
-  margin: 3rem 0 1rem 0;
   min-height: 10rem;
   display: flex;
   flex-direction: column;
@@ -85,10 +84,11 @@ const DeviconWrapper = styled.div`
 `;
 
 const RowDiv = styled.div`
-  width: 10rem;
+  width: 15rem;
   margin: 1rem auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
 const FrontEndDiv = styled.div`
