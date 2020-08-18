@@ -58,16 +58,18 @@ const StyledPortfolio = styled(Portfolio)`
   margin-top: 10em;
 
   h1 {
-    margin: 1rem 0 0 2rem;
+    margin: 1rem auto;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    text-align: center;
   }
 
   h2 {
-    margin: 2rem 0 0 2rem;
+    margin: 2rem auto;
     width: 100%;
     font-size: 28px;
     line-height: 1.3;
+    text-align: center;
   }
 
   a {
@@ -97,17 +99,16 @@ const FeatureLogo = styled.div`
 
 const LinkInfoDiv = styled.div`
   margin-top: 2rem;
-  margin-left: 2rem;
   font-size: 20px;
 `;
 
-const TextDiv = styled.div`
-  margin-right: 5rem;
-`;
+const TextDiv = styled.div``;
 
 const PortfolioContainer = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 `;
 
 export default StyledPortfolio;
