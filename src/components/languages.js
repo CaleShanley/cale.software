@@ -75,7 +75,7 @@ const DeviconWrapper = styled.div`
   grid-template-columns: 4rem 4rem 4rem;
   grid-gap: 4rem;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 3rem auto;
 `;
 
 const FrontEndDiv = styled.div`
