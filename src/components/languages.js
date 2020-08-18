@@ -85,7 +85,7 @@ const DeviconWrapper = styled.div`
 
 const RowDiv = styled.div`
   width: 15rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
