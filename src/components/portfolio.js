@@ -12,14 +12,14 @@ const Portfolio = ({ siteTitle, className }) => (
     <Container>
       <h1>My Projects:</h1>
       <PortfolioContainer>
-        <div>
+        <TextDiv>
           <h2>
             These are the Projects I've completed while at General Assembly.
           </h2>
           <LinkInfoDiv>
             <Link to="/projects/">More Info on Projects</Link>
           </LinkInfoDiv>
-        </div>
+        </TextDiv>
         <ProjectsWrapper>
           <FeatureLogo>
             <a href="/projects">
@@ -53,18 +53,18 @@ Portfolio.defaultProps = {
 const StyledPortfolio = styled(Portfolio)`
   color: black;
   background: var(--primary-color);
-  padding: 1rem 0;
+  padding: 2rem 0;
   margin-bottom: 5rem;
   margin-top: 10em;
 
   h1 {
-    margin: 1rem 0 0 4rem;
+    margin: 1rem 0 0 2rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   h2 {
-    margin: 2rem 0 0 4rem;
+    margin: 2rem 0 0 2rem;
     width: 100%;
     font-size: 28px;
     line-height: 1.3;
@@ -97,14 +97,18 @@ const FeatureLogo = styled.div`
 
 const LinkInfoDiv = styled.div`
   margin-top: 2rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
   font-size: 20px;
 `;
 
+const TextDiv = styled.div`
+  color: black;
+  margin-right: 5rem;
+`;
+
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 7rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default StyledPortfolio;
