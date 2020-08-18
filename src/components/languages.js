@@ -72,7 +72,7 @@ const StyledLanguages = styled(Languages)`
 const DeviconWrapper = styled.div`
   max-width: 100%;
   display: grid;
-  grid-template-columns: 4rem 4rem 4rem;
+  grid-template-columns: 5rem 5rem 5rem;
   grid-gap: 2rem;
   justify-content: center;
   margin: 4rem 5em 4rem 5em;
