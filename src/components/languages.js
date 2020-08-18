@@ -8,23 +8,29 @@ import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg';
 import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg';
 import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
-import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
 import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
+import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
       <h3>Some of My Skills:</h3>
       <DeviconWrapper>
-        <Csslogo />
-        <Htmllogo />
-        <Javascriptlogo />
-        <Npmlogo />
-        <Gitlogo />
-        <Reactlogo />
-        <Railslogo />
-        <Nodelogo />
-        <Mysqllogo />
+        <RowDiv>
+          <Csslogo />
+          <Htmllogo />
+          <Javascriptlogo />
+        </RowDiv>
+        <RowDiv>
+          <Npmlogo />
+          <Gitlogo />
+          <Reactlogo />
+        </RowDiv>
+        <RowDiv>
+          <Railslogo />
+          <Nodelogo />
+          <Mysqllogo />
+        </RowDiv>
       </DeviconWrapper>
       <Paragraph>
         <SkillsWrapper>
@@ -67,35 +73,34 @@ const StyledLanguages = styled(Languages)`
     margin-bottom: 1rem;
     text-align: center;
   }
-
-  scroll-container {
-    display: block;
-    width: 350px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
 `;
 
 const DeviconWrapper = styled.div`
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  grid-gap: 3rem;
-  align-items: center;
-  margin: 4rem 5em 4rem 5em;
+  width: 100%;
+  margin: 3rem 0 1rem 0;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const RowDiv = styled.div`
+  width: 10rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
 `;
 
 const FrontEndDiv = styled.div`
-  margin-right: 3rem;
+  margin-bottom: 2rem;
 `;
 
 const BackEndDiv = styled.div``;
 
 const SkillsWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  margin: 3rem 0 3rem 0;
+  flex-direction: column;
+  margin: 2rem 0 3rem 0;
 `;
 
 const Paragraph = styled.p`
