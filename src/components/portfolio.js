@@ -104,8 +104,8 @@ const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
   margin: 2rem 0 3rem 0;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 100px;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
