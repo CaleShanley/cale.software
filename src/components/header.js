@@ -5,7 +5,7 @@ import { Container } from './layoutComponents';
 import { ReactComponent as MenuIcon } from '../images/svg/menubar.svg';
 import { media } from '../utils';
 
-const Header = ({ siteTitle, className }) => {
+const Header = ({ page }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,6 +15,11 @@ const Header = ({ siteTitle, className }) => {
 
   const navigate = (event, id) => {
     event.preventDefault();
+
+    if (page) {
+      window.location.href = `/#${id}`;
+      return;
+    }
 
     const el = document.getElementById(id);
     const top = window.pageYOffset + el.getBoundingClientRect().top;
@@ -27,11 +32,11 @@ const Header = ({ siteTitle, className }) => {
   };
 
   return (
-    <header className={className}>
+    <header>
       <Container>
         <NavMenu>
           <Title>
-            <Link to="/">{siteTitle}</Link>
+            <Link to="/">Cale Shanely</Link>
           </Title>
           <MenuBtn onClick={() => toggleMenu()} />
           <NavLinks isOpen={isOpen}>
@@ -50,7 +55,6 @@ const StyledHeader = styled(Header)`
   background: var(--white);
   padding: 1rem 0;
   align-content: center;
-
 `;
 
 const Title = styled.h1`
@@ -89,7 +93,7 @@ const LinkBtn = styled.button`
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline
+    text-decoration: underline;
   }
 
   ${media.desktop`

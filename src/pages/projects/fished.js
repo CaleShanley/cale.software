@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../../components/layout';
+import Layout from '../../components/page-layout';
 import Fished from '../../components/fished';
 import { media } from '../../utils';
 import { Container } from '../../components/layoutComponents';

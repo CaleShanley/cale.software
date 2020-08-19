@@ -18,7 +18,7 @@ const Headshot = () => (
     query={graphql`
       query {
         placeholderImage: file(
-          relativePath: { eq: "lol.jpg" }
+          relativePath: { eq: "cale_headshot_b_w-removebg-preview (1) (8).png" }
         ) {
           childImageSharp {
             fluid(maxWidth: 443) {
