@@ -15,7 +15,7 @@ const Portfolio = ({ siteTitle, className }) => (
             working on with a good friend of mine. This website will educate
             companys about Phishing.
           </p>
-          <GreyText>(Project not live yet)</GreyText>
+          <GreyText>(Project not fully live yet)</GreyText>
         </div>
         <ProjectsWrapper>
           <FeatureDiv>
