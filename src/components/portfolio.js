@@ -102,10 +102,11 @@ const ProjectsWrapper = styled.div``;
 
 const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 1rem 3rem 1rem;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 300px;
   height: 100px;
+
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
@@ -113,6 +114,7 @@ const FeatureLogo = styled.div`
 
   ${media.desktop`
     width: 400px;
+    
   `}
 `;
 
@@ -134,6 +136,7 @@ const DesktopProjects = styled.div`
   ${media.desktop`
     display: flex;
     flex-direction: row;
+    margin: 0 1rem 2rem 1rem;
   `}
 `;
 export default StyledPortfolio;
