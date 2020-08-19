@@ -24,8 +24,9 @@ const Portfolio = ({ siteTitle, className }) => (
         </TextDiv>
         <ProjectsWrapper>
           <FeatureLogo>
-            <a href="/projects"></a>
-            <Fished />
+            <a href="/projects">
+              <Fished />
+            </a>
           </FeatureLogo>
           <FeatureLogo>
             <a href="/projects">
