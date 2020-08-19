@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ReactComponent as GitHubIcon} from '../images/svg/githublogo.svg';
-import {ReactComponent as LinkedInIcon} from '../images/svg/linkedinlogo.svg';
-import {ReactComponent as EmailIcon} from '../images/svg/email.svg';
+import { ReactComponent as GitHubIcon } from '../images/svg/githublogo.svg';
+import { ReactComponent as LinkedInIcon } from '../images/svg/linkedinlogo.svg';
+import { ReactComponent as EmailIcon } from '../images/svg/email.svg';
 import Headshot from './headshot';
 import { media } from '../utils';
 
 const Hero = () => (
-  <HeroContainer>
+  <HeroContainer id="contact">
     <Headshot />
     <Text>
       <Subtitle> Currently looking for work</Subtitle>
@@ -16,7 +16,7 @@ const Hero = () => (
         Recently graduated General Assembly's Software Engineering course. I'm
         passionate, motivated and excited for my future in the industry.
       </p>
-
+      <p>Contact Info:</p>
       <IconWrapper>
         <Icon
           href="https://github.com/CaleShanley"
@@ -93,7 +93,7 @@ const Text = styled.div`
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1rem
-`
+  font-size: 1rem;
+`;
 
 export default Hero;

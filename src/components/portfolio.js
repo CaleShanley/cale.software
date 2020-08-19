@@ -14,9 +14,7 @@ const Portfolio = () => (
       <Heading2>My Projects:</Heading2>
       <PortfolioContainer>
         <TextDiv>
-          <Paragraph>
-            These are the projects I've completed.
-          </Paragraph>
+          <Paragraph>These are the projects I've completed.</Paragraph>
         </TextDiv>
         <ProjectsWrapper>
           <DesktopProjects>
@@ -26,19 +24,19 @@ const Portfolio = () => (
               </a>
             </FeatureLogo>
             <FeatureLogo>
-              <a href="/projects">
+              <a href="/projects/drink">
                 <DrinkGame />
               </a>
             </FeatureLogo>
           </DesktopProjects>
           <DesktopProjects>
             <FeatureLogo>
-              <a href="/projects">
+              <a href="/projects/todolist">
                 <ToDoList />
               </a>
             </FeatureLogo>
             <FeatureLogo>
-              <a href="/projects">
+              <a href="/projects/tictactoe">
                 <TicTacToe />
               </a>
             </FeatureLogo>
@@ -102,7 +100,6 @@ const Heading2 = styled.h2`
   font-weight: 700;
   text-align: center;
 `;
-
 
 const Paragraph = styled.p`
   color: grey;
