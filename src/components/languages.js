@@ -10,6 +10,7 @@ import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
 import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
 import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
+import { media } from '../utils';
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
@@ -72,12 +73,15 @@ const StyledLanguages = styled(Languages)`
     color: black;
     margin-bottom: 1rem;
     text-align: center;
+
+    ${media.desktop`
+    font-size: 30px;
+  `}
   }
 `;
 
 const DeviconWrapper = styled.div`
   width: 100%;
-  margin: 3rem 0 1rem 0;
   min-height: 10rem;
   display: flex;
   flex-direction: column;
@@ -85,22 +89,41 @@ const DeviconWrapper = styled.div`
 `;
 
 const RowDiv = styled.div`
-  width: 10rem;
-  margin: 1rem auto;
+  width: 15rem;
+  margin: 0.5rem auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  ${media.desktop`
+    width: 30rem;
+  `}
 `;
 
 const FrontEndDiv = styled.div`
   margin-bottom: 2rem;
+  ${media.desktop`
+    margin-right: 2rem;
+  `}
 `;
 
-const BackEndDiv = styled.div``;
+const BackEndDiv = styled.div`
+  ${media.desktop`
+    margin-right: 2rem;
+  `}
+`;
 
 const SkillsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2rem 0 3rem 0;
+
+  ${media.desktop`
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  `}
 `;
 
 const Paragraph = styled.p`
@@ -109,6 +132,10 @@ const Paragraph = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
+
+  ${media.desktop`
+    font-size: 20px;
+  `}
 `;
 
 export default StyledLanguages;

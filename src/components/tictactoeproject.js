@@ -11,7 +11,7 @@ const Portfolio = ({ siteTitle, className }) => (
       <PortfolioContainer>
         <p>
           This one was my very first Project when I had started at General
-          Assembly. This is the landing page for my TicTacToe Project - an app
+          Assembly. This is the landing page for my TicTacToe Project - Website
           created in JavaScript, HTML and CSS.
         </p>
         <ProjectsWrapper>
@@ -19,24 +19,24 @@ const Portfolio = ({ siteTitle, className }) => (
             <TicTacToe />
           </FeatureDiv>
         </ProjectsWrapper>
-        <nav>
-          <a
-            href="https://caleshanley.github.io/project0/"
-            target="_blank"
-            rel="nofollow"
-          >
-            Live Demo
-          </a>
-          <a
-            class="info"
-            href="https://github.com/CaleShanley/project0"
-            target="_blank"
-            rel="nofollow"
-          >
-            Source Code
-          </a>
-        </nav>
       </PortfolioContainer>
+      <nav>
+        <a
+          href="https://caleshanley.github.io/project0/"
+          target="_blank"
+          rel="nofollow"
+        >
+          Live Demo
+        </a>
+        <a
+          class="info"
+          href="https://github.com/CaleShanley/project0"
+          target="_blank"
+          rel="nofollow"
+        >
+          Source Code
+        </a>
+      </nav>
     </Container>
   </div>
 );
@@ -95,9 +95,8 @@ const FeatureDiv = styled.div`
 const ProjectsWrapper = styled.div``;
 
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default StyledPortfolio;
