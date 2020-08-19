@@ -104,7 +104,7 @@ const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
   margin: 2rem 0 3rem 0;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
-  width: 400px;
+  width: 200px;
   height: 200px;
   cursor: pointer;
   &:hover {
@@ -113,7 +113,7 @@ const FeatureLogo = styled.div`
 
   ${media.desktop`
     width: 400px;
-    margin: 2rem 1rem 2rem 1rem;
+    /* margin: 2rem 1rem 2rem 1rem; */
     object-fit: contain
   `}
 `;
