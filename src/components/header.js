@@ -116,7 +116,7 @@ const NavMenu = styled.nav`
   justify-content: space-between;
   align-items: center;
   line-height: 1.1;
-  font-size: 16px;
+  margin-top: 1.5rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `;
