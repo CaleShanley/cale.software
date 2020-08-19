@@ -24,7 +24,7 @@ const Portfolio = ({ siteTitle, className }) => (
         <a
           href="https://caleshanley.github.io/project0/"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Live Demo
         </a>
@@ -32,7 +32,7 @@ const Portfolio = ({ siteTitle, className }) => (
           class="info"
           href="https://github.com/CaleShanley/project0"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Source Code
         </a>

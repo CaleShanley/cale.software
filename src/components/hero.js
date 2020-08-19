@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as Githublogo } from '../images/svg/githublogo.svg';
-import { ReactComponent as Linkedinlogo } from '../images/svg/linkedinlogo.svg';
-import { ReactComponent as Envelopelogo } from '../images/svg/envelope.svg';
+import {ReactComponent as GitHubIcon} from '../images/svg/githublogo.svg';
+import {ReactComponent as LinkedInIcon} from '../images/svg/linkedinlogo.svg';
+import {ReactComponent as EmailIcon} from '../images/svg/email.svg';
 import Headshot from './headshot';
 import { media } from '../utils';
 
@@ -10,10 +10,10 @@ const Hero = () => (
   <HeroContainer>
     <Headshot />
     <Text>
-      <Title>I'm a Junior Web developer from Sydney.</Title>
+      <Subtitle> Currently looking for work</Subtitle>
+      <Title>Cale Shanley</Title>
       <p>
-        Over the past 4 months, I've gained a ton of experience studying through
-        General Assembly's Software Engineering immersive course. I'm
+        Recently graduated General Assembly's Software Engineering course. I'm
         passionate, motivated and excited for my future in the industry.
       </p>
 
@@ -23,17 +23,17 @@ const Hero = () => (
           target="_blank"
           rel="nofollow"
         >
-          <Githublogo />
+          <GitHubIcon />
         </Icon>
         <Icon
           href="https://www.linkedin.com/in/caleshanley/"
           target="_blank"
           rel="nofollow"
         >
-          <Linkedinlogo />
+          <LinkedInIcon />
         </Icon>
         <Icon href="mailto:caleshanley.0@gmail.com">
-          <Envelopelogo />
+          <EmailIcon />
         </Icon>
       </IconWrapper>
     </Text>
@@ -43,12 +43,13 @@ const Hero = () => (
 const Title = styled.h1`
   margin: 1.5rem 0;
   color: black;
-  font-size: 40px;
+  font-size: 3rem;
+  font-weight: 800;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   ${media.desktop`
-    font-size: 45px;
+    font-size: 4rem;
   `}
 `;
 
@@ -82,7 +83,7 @@ const Icon = styled.a`
   margin-right: 1rem;
 `;
 
-const Text = styled.p`
+const Text = styled.div`
   color: black;
   padding: 2rem 0 0;
 
@@ -90,5 +91,9 @@ const Text = styled.p`
     padding: 0 4rem 0 0;
   `}
 `;
+
+const Subtitle = styled.h2`
+  font-size: 1rem
+`
 
 export default Hero;

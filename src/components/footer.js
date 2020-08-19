@@ -13,8 +13,7 @@ const Footer = ({ className }) => (
 )
 
 const StyledFooter = styled(Footer)`
-  color: #fffaff;
-  background: black;
+  color: #333;
   padding: 1rem 0;
   font-size: 17px;
   text-align: center;

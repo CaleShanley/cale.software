@@ -23,14 +23,14 @@ const Portfolio = ({ siteTitle, className }) => (
         <a
           href="https://project1-todo-list.herokuapp.com/login"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Live Demo
         </a>
         <a
           href="https://github.com/CaleShanley/Project1"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Source Code
         </a>

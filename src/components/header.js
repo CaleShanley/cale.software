@@ -1,24 +1,49 @@
-import { Link } from 'gatsby';
-import React from 'react';
+import { Link, navigate } from 'gatsby';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Container } from './layoutComponents';
+import { ReactComponent as MenuIcon } from '../images/svg/menubar.svg';
+import { media } from '../utils';
 
-const Header = ({ siteTitle, className }) => (
-  <header className={className}>
-    <Container>
-      <NavMenu>
-        <Title>
-          <Link to="/">{siteTitle}</Link>
-        </Title>
-        <NavLinks>
-          <FeatureDiv>
-            <a href="/projects">Projects</a>
-          </FeatureDiv>
-        </NavLinks>
-      </NavMenu>
-    </Container>
-  </header>
-);
+const Header = ({ siteTitle, className }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(isOpen);
+  };
+
+  const navigate = (event, id) => {
+    event.preventDefault();
+
+    const el = document.getElementById(id);
+    const top = window.pageYOffset + el.getBoundingClientRect().top;
+    console.log(el, top);
+
+    window.scrollTo({
+      top,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <header className={className}>
+      <Container>
+        <NavMenu>
+          <Title>
+            <Link to="/">{siteTitle}</Link>
+          </Title>
+          <MenuBtn onClick={() => toggleMenu()} />
+          <NavLinks isOpen={isOpen}>
+            <LinkBtn onClick={e => navigate(e, 'skills')}>Skills</LinkBtn>
+            <LinkBtn onClick={e => navigate(e, 'projects')}>Projects</LinkBtn>
+            <LinkBtn onClick={e => navigate(e, 'contact')}>Contact Me</LinkBtn>
+          </NavLinks>
+        </NavMenu>
+      </Container>
+    </header>
+  );
+};
 
 const StyledHeader = styled(Header)`
   color: var(--white);
@@ -26,26 +51,59 @@ const StyledHeader = styled(Header)`
   padding: 1rem 0;
   align-content: center;
 
-  a {
-    font-size: 20px;
-  }
-`;
-
-const FeatureDiv = styled.div`
-  display: inline-flex;
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
 `;
 
 const Title = styled.h1`
   font-size: 22px;
+  margin-bottom: 0;
 `;
 
 const NavLinks = styled.div`
-  margin-bottom: 1.4rem;
-  margin-right: 10px;
+  background: var(--secondary-color);
+  display: ${props => (props.isOpen ? 'flex' : 'none')};
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  left: 0;
+  top: 0;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 5;
+
+  ${media.desktop`
+    position: relative;
+    display: block;
+    background: var(--white);
+    height: 25px;
+    width: 293px;
+    margin-right: 0;
+    margin-left: 1rem;
+  `}
+`;
+
+const LinkBtn = styled.button`
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 22px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline
+  }
+
+  ${media.desktop`
+    margin-left: 1rem;
+    margin-right: 0;
+  `}
+`;
+
+const MenuBtn = styled(MenuIcon)`
+  z-index: 10;
+
+  ${media.desktop`
+    display: none;
+  `}
 `;
 
 const NavMenu = styled.nav`

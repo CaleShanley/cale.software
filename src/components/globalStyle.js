@@ -1,7 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Karla|Lato');
   :root {
     --primary-color: linear-gradient(180deg,#e0f3fa,rgba(224,238,250,.63));;
     --secondary-color: linear-gradient(180deg,#eee,#fafafa);;
@@ -11,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   html {
-    font-family: lato;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     touch-action: manipulation;
@@ -26,13 +26,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   main {
     flex: 1 0 auto;
-    h1,h2,h3,h4,h5,h6 {
-    font-family: Karla;
-    color: black;
-    }
-    a {
-      color: #404C45;
-    }
   }
   a {
     text-decoration: none;
@@ -216,7 +209,6 @@ export const GlobalStyle = createGlobalStyle`
     font: inherit;
   }
   html {
-    font: 112.5%/1.45em georgia, serif;
     box-sizing: border-box;
     overflow-y: scroll;
   }
@@ -231,7 +223,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: georgia, serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -651,4 +642,4 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 100%;
     }
   }
-`
+`;

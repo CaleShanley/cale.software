@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import TicTacToe from './tictactoe';
@@ -9,18 +8,15 @@ import { Link } from 'gatsby';
 import { Container } from './layoutComponents';
 import { media } from '../utils';
 
-const Portfolio = ({ siteTitle, className }) => (
-  <div className={className}>
+const Portfolio = () => (
+  <Wrapper id="projects">
     <Container>
-      <h1>My Projects:</h1>
+      <Heading2>My Projects:</Heading2>
       <PortfolioContainer>
         <TextDiv>
-          <h2>
+          <Paragraph>
             These are the Projects I've completed while at General Assembly.
-          </h2>
-          <LinkInfoDiv>
-            <Link to="/projects/">More Info on Projects</Link>
-          </LinkInfoDiv>
+          </Paragraph>
         </TextDiv>
         <ProjectsWrapper>
           <DesktopProjects>
@@ -50,52 +46,14 @@ const Portfolio = ({ siteTitle, className }) => (
         </ProjectsWrapper>
       </PortfolioContainer>
     </Container>
-  </div>
+  </Wrapper>
 );
 
-Portfolio.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Portfolio.defaultProps = {
-  siteTitle: ``
-};
-
-const StyledPortfolio = styled(Portfolio)`
-  color: black;
-  background: var(--secondary-color);
-  padding: 2rem 0;
-  margin-bottom: 5rem;
-  margin-top: 10em;
-
-  h1 {
-    margin: 1rem auto;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    text-align: center;
-
-    ${media.desktop`
-    font-size: 45px;
-  `}
-  }
-
-  h2 {
-    margin: 2rem auto;
-    width: 100%;
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  a {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    color: black;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+const Wrapper = styled.div`
+  background: #bcf4de;
+  margin: 2rem auto 2rem;
+  padding: 3rem 0;
+  max-width: 1125px;
 `;
 
 const ProjectsWrapper = styled.div``;
@@ -105,7 +63,6 @@ const FeatureLogo = styled.div`
   margin: 2rem 1rem 3rem 1rem;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 300px;
-  height: 100px;
 
   cursor: pointer;
   &:hover {
@@ -136,7 +93,27 @@ const DesktopProjects = styled.div`
   ${media.desktop`
     display: flex;
     flex-direction: row;
-    margin: 0 1rem 2rem 1rem;
+    margin: 2rem 0 2rem;
   `}
 `;
-export default StyledPortfolio;
+
+const Heading2 = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+`;
+
+
+const Paragraph = styled.p`
+  color: grey;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+
+  ${media.desktop`
+    font-size: 20px;
+  `}
+`;
+
+export default Portfolio;

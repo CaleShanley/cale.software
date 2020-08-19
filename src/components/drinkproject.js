@@ -1,11 +1,10 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import DrinkGame from './drinkgame';
 import { Container } from './layoutComponents';
 
-const Portfolio = ({ siteTitle, className }) => (
-  <div className={className}>
+const Portfolio = () => (
+  <div>
     <Container>
       <Title>Drinking Game:</Title>
       <PortfolioContainer>
@@ -26,14 +25,14 @@ const Portfolio = ({ siteTitle, className }) => (
         <a
           href="https://drinking-game-663f5.web.app/"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Live Demo
         </a>
         <a
           href="https://github.com/CaleShanley/project2-client"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noreferrer"
         >
           Source Code
         </a>
@@ -41,14 +40,6 @@ const Portfolio = ({ siteTitle, className }) => (
     </Container>
   </div>
 );
-
-Portfolio.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Portfolio.defaultProps = {
-  siteTitle: ``
-};
 
 const StyledPortfolio = styled(Portfolio)`
   color: black;
