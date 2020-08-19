@@ -10,6 +10,7 @@ import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
 import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
 import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
+import { media } from '../utils';
 
 const Languages = ({ siteTitle, className }) => (
   <div className={className}>
@@ -72,6 +73,10 @@ const StyledLanguages = styled(Languages)`
     color: black;
     margin-bottom: 1rem;
     text-align: center;
+
+    ${media.desktop`
+    font-size: 30px;
+  `}
   }
 `;
 
@@ -89,6 +94,10 @@ const RowDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  ${media.desktop`
+    width: 30rem;
+  `}
 `;
 
 const FrontEndDiv = styled.div`
@@ -109,6 +118,10 @@ const Paragraph = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
+
+  ${media.desktop`
+    font-size: 20px;
+  `}
 `;
 
 export default StyledLanguages;

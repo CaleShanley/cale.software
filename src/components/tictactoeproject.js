@@ -11,7 +11,7 @@ const Portfolio = ({ siteTitle, className }) => (
       <PortfolioContainer>
         <p>
           This one was my very first Project when I had started at General
-          Assembly. This is the landing page for my TicTacToe Project - an app
+          Assembly. This is the landing page for my TicTacToe Project - Website
           created in JavaScript, HTML and CSS.
         </p>
         <ProjectsWrapper>

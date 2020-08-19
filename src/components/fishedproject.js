@@ -1,38 +1,32 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import ToDoList from './todolist';
+import Fished from './fished';
 import { Container } from './layoutComponents';
 
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
     <Container>
-      <h1>Todo List:</h1>
+      <Title>Fished.io:</Title>
       <PortfolioContainer>
-        <p>
-          Landing page for my Todo List Project - an app created with JavaScript
-          and Ruby/SQL.
-        </p>
+        <div>
+          <p>
+            Landing page for Fished.io - This is currently the Project I am
+            working on with a good friend of mine. This website will educate
+            companys about Phishing.
+          </p>
+          <GreyText>(Project not live yet)</GreyText>
+        </div>
         <ProjectsWrapper>
           <FeatureDiv>
-            <ToDoList />
+            <Fished />
           </FeatureDiv>
         </ProjectsWrapper>
         <nav>
-          <a
-            href="https://project1-todo-list.herokuapp.com/login"
-            target="_blank"
-            rel="nofollow"
-          >
+          <a href="https://fished.io" target="_blank" rel="nofollow">
             Live Demo
           </a>
-          <a
-            href="https://github.com/CaleShanley/Project1"
-            target="_blank"
-            rel="nofollow"
-          >
-            Source Code
-          </a>
+          <a href="https://github.com/CaleShanley">Source Code</a> (Private)
         </nav>
       </PortfolioContainer>
     </Container>
@@ -52,12 +46,6 @@ const StyledPortfolio = styled(Portfolio)`
   background: var(--secondary-color);
   padding: 1rem 0;
   margin-bottom: 1rem;
-
-  h1 {
-    margin: 1rem 0 0 4rem;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  }
 
   p {
     margin: 2rem 0 0 4rem;
@@ -80,6 +68,11 @@ const StyledPortfolio = styled(Portfolio)`
   }
 `;
 
+const GreyText = styled.p`
+  margin-top: 1rem;
+  color: grey;
+`;
+
 const FeatureDiv = styled.div`
   transition: all 0.3s ease-in;
   margin: 2rem 6rem 0;
@@ -89,6 +82,11 @@ const FeatureDiv = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+`;
+const Title = styled.h1`
+  margin: 1rem 0 0 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `;
 
 const ProjectsWrapper = styled.div``;

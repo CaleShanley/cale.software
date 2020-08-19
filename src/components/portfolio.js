@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import TicTacToe from './tictactoe';
 import ToDoList from './todolist';
 import DrinkGame from './drinkgame';
+import Fished from './fished';
 import { Link } from 'gatsby';
 import { Container } from './layoutComponents';
+import { media } from '../utils';
 
 const Portfolio = ({ siteTitle, className }) => (
   <div className={className}>
@@ -21,6 +23,10 @@ const Portfolio = ({ siteTitle, className }) => (
           </LinkInfoDiv>
         </TextDiv>
         <ProjectsWrapper>
+          <FeatureLogo>
+            <a href="/projects"></a>
+            <Fished />
+          </FeatureLogo>
           <FeatureLogo>
             <a href="/projects">
               <DrinkGame />
@@ -52,7 +58,7 @@ Portfolio.defaultProps = {
 
 const StyledPortfolio = styled(Portfolio)`
   color: black;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   padding: 2rem 0;
   margin-bottom: 5rem;
   margin-top: 10em;
@@ -62,6 +68,10 @@ const StyledPortfolio = styled(Portfolio)`
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     text-align: center;
+
+    ${media.desktop`
+    font-size: 45px;
+  `}
   }
 
   h2 {

@@ -11,7 +11,7 @@ const Portfolio = ({ siteTitle, className }) => (
       <PortfolioContainer>
         <div>
           <p>
-            Landing page for our Game Project - an app created with React and
+            Landing page for our Game Project - Website created with React and
             Firebase.
           </p>
           <GreyText>(This was a Group Project)</GreyText>
