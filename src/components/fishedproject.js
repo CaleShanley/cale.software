@@ -21,12 +21,12 @@ const Portfolio = ({ siteTitle, className }) => (
             <Fished />
           </FeatureDiv>
         </ProjectsWrapper>
-        <nav>
-          <a href="https://fished.io" target="_blank" rel="nofollow">
-            Live Demo
-          </a>
-        </nav>
       </PortfolioContainer>
+      <nav>
+        <a href="https://fished.io" target="_blank" rel="nofollow">
+          Live Demo
+        </a>
+      </nav>
     </Container>
   </div>
 );
@@ -85,9 +85,8 @@ const Title = styled.h1`
 const ProjectsWrapper = styled.div``;
 
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default StyledPortfolio;

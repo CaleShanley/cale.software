@@ -23,26 +23,30 @@ const Portfolio = ({ siteTitle, className }) => (
           </LinkInfoDiv>
         </TextDiv>
         <ProjectsWrapper>
-          <FeatureLogo>
-            <a href="/projects">
-              <Fished />
-            </a>
-          </FeatureLogo>
-          <FeatureLogo>
-            <a href="/projects">
-              <DrinkGame />
-            </a>
-          </FeatureLogo>
-          <FeatureLogo>
-            <a href="/projects">
-              <ToDoList />
-            </a>
-          </FeatureLogo>
-          <FeatureLogo>
-            <a href="/projects">
-              <TicTacToe />
-            </a>
-          </FeatureLogo>
+          <DesktopProjects>
+            <FeatureLogo>
+              <a href="/projects">
+                <Fished />
+              </a>
+            </FeatureLogo>
+            <FeatureLogo>
+              <a href="/projects">
+                <DrinkGame />
+              </a>
+            </FeatureLogo>
+          </DesktopProjects>
+          <DesktopProjects>
+            <FeatureLogo>
+              <a href="/projects">
+                <ToDoList />
+              </a>
+            </FeatureLogo>
+            <FeatureLogo>
+              <a href="/projects">
+                <TicTacToe />
+              </a>
+            </FeatureLogo>
+          </DesktopProjects>
         </ProjectsWrapper>
       </PortfolioContainer>
     </Container>
@@ -100,12 +104,17 @@ const FeatureLogo = styled.div`
   transition: all 0.3s ease-in;
   margin: 2rem 0 3rem 0;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
-  width: 300px;
-  min-height: 100px;
+  width: 400px;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
   }
+
+  ${media.desktop`
+    width: 400px;
+    margin: 2rem 1rem 2rem 1rem;
+    object-fit: contain
+  `}
 `;
 
 const LinkInfoDiv = styled.div`
@@ -122,4 +131,10 @@ const PortfolioContainer = styled.div`
   align-items: center;
 `;
 
+const DesktopProjects = styled.div`
+  ${media.desktop`
+    display: flex;
+    flex-direction: row;
+  `}
+`;
 export default StyledPortfolio;

@@ -102,14 +102,28 @@ const RowDiv = styled.div`
 
 const FrontEndDiv = styled.div`
   margin-bottom: 2rem;
+  ${media.desktop`
+    margin-right: 2rem;
+  `}
 `;
 
-const BackEndDiv = styled.div``;
+const BackEndDiv = styled.div`
+  ${media.desktop`
+    margin-right: 2rem;
+  `}
+`;
 
 const SkillsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2rem 0 3rem 0;
+
+  ${media.desktop`
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  `}
 `;
 
 const Paragraph = styled.p`

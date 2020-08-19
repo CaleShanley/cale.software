@@ -18,23 +18,23 @@ const Portfolio = ({ siteTitle, className }) => (
             <ToDoList />
           </FeatureDiv>
         </ProjectsWrapper>
-        <nav>
-          <a
-            href="https://project1-todo-list.herokuapp.com/login"
-            target="_blank"
-            rel="nofollow"
-          >
-            Live Demo
-          </a>
-          <a
-            href="https://github.com/CaleShanley/Project1"
-            target="_blank"
-            rel="nofollow"
-          >
-            Source Code
-          </a>
-        </nav>
       </PortfolioContainer>
+      <nav>
+        <a
+          href="https://project1-todo-list.herokuapp.com/login"
+          target="_blank"
+          rel="nofollow"
+        >
+          Live Demo
+        </a>
+        <a
+          href="https://github.com/CaleShanley/Project1"
+          target="_blank"
+          rel="nofollow"
+        >
+          Source Code
+        </a>
+      </nav>
     </Container>
   </div>
 );
@@ -94,9 +94,8 @@ const FeatureDiv = styled.div`
 const ProjectsWrapper = styled.div``;
 
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default StyledPortfolio;

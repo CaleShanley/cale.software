@@ -21,23 +21,23 @@ const Portfolio = ({ siteTitle, className }) => (
             <DrinkGame />
           </FeatureDiv>
         </ProjectsWrapper>
-        <nav>
-          <a
-            href="https://drinking-game-663f5.web.app/"
-            target="_blank"
-            rel="nofollow"
-          >
-            Live Demo
-          </a>
-          <a
-            href="https://github.com/CaleShanley/project2-client"
-            target="_blank"
-            rel="nofollow"
-          >
-            Source Code
-          </a>
-        </nav>
       </PortfolioContainer>
+      <nav>
+        <a
+          href="https://drinking-game-663f5.web.app/"
+          target="_blank"
+          rel="nofollow"
+        >
+          Live Demo
+        </a>
+        <a
+          href="https://github.com/CaleShanley/project2-client"
+          target="_blank"
+          rel="nofollow"
+        >
+          Source Code
+        </a>
+      </nav>
     </Container>
   </div>
 );
@@ -101,9 +101,8 @@ const GreyText = styled.p`
 `;
 
 const PortfolioContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default StyledPortfolio;
