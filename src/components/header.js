@@ -75,7 +75,7 @@ const NavLinks = styled.div`
     display: block;
     background: var(--white);
     height: 25px;
-    width: 293px;
+    width: 320px;
     margin-right: 0;
     margin-left: 1rem;
   `}

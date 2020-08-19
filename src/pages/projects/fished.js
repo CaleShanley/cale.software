@@ -1,55 +1,68 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../components/layout';
-
+import Fished from '../../components/fished';
+import { media } from '../../utils';
 import { Container } from '../../components/layoutComponents';
 
 const ProjectsPage = () => (
   <Layout>
-    <Container>
-      <Title>Fished.io:</Title>
-      <PortfolioContainer>
-        <div>
-          <p>
-            I developed a landing page for Fished Security, a pre-launch start
-            up I am working on with a friend. We're using React, BaseWeb and
-            Styletron for CSS in JS.
-          </p>
-        </div>
-        <ProjectsWrapper>
-          <FeatureDiv>{/* <Fished /> */}</FeatureDiv>
-        </ProjectsWrapper>
-      </PortfolioContainer>
-      <nav>
-        <a href="https://fished.io" target="_blank" rel="nofollow noreferrer">
-          Live Demo
-        </a>
-      </nav>
-    </Container>
+    <Wrapper>
+      <Text>
+        <Title>Fished Security</Title>
+        <Paragraph>
+          I developed a landing page for Fished Security, a pre-launch start up
+          I am working on with a friend. We're using React, BaseWeb and
+          Styletron for CSS in JS.
+        </Paragraph>
+        <nav>
+          <a href="https://fished.io" target="_blank" rel="nofollow noreferrer">
+            Live Demo
+          </a>
+        </nav>
+      </Text>
+      <Preview>
+        <Fished />
+      </Preview>
+    </Wrapper>
   </Layout>
 );
 
-const FeatureDiv = styled.div`
+const Wrapper = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  max-width: 1125px;
+
+  ${media.desktop`
+    margin: 6rem auto;
+    flex-direction: row;
+  `}
+`;
+
+const Preview = styled.div`
   transition: all 0.3s ease-in;
-  margin: 2rem 6rem 0;
+  margin: 2rem 0 0;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
-  width: 400px;
+  width: 100%;
+  max-width: 900px;
 
   &:hover {
     transform: scale(1.05);
   }
 `;
 const Title = styled.h1`
-  margin: 1rem 0 0 4rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 1rem 0;
 `;
 
-const ProjectsWrapper = styled.div``;
+const Text = styled.div`
+  margin: 3rem 0;
+  max-width: 800px;
+  padding-right: 2rem;
+`;
 
-const PortfolioContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+const Paragraph = styled.p`
+  font-size: 1.25rem;
+  line-height: 1.25;
 `;
 
 export default ProjectsPage;
