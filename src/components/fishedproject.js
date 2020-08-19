@@ -15,7 +15,6 @@ const Portfolio = ({ siteTitle, className }) => (
             working on with a good friend of mine. This website will educate
             companys about Phishing.
           </p>
-          <GreyText>(Project not fully live yet)</GreyText>
         </div>
         <ProjectsWrapper>
           <FeatureDiv>
@@ -26,7 +25,6 @@ const Portfolio = ({ siteTitle, className }) => (
           <a href="https://fished.io" target="_blank" rel="nofollow">
             Live Demo
           </a>
-          <a href="https://github.com/CaleShanley">Source Code</a> (Private)
         </nav>
       </PortfolioContainer>
     </Container>
@@ -66,11 +64,6 @@ const StyledPortfolio = styled(Portfolio)`
       text-decoration: underline;
     }
   }
-`;
-
-const GreyText = styled.p`
-  margin-top: 1rem;
-  color: grey;
 `;
 
 const FeatureDiv = styled.div`
