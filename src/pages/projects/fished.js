@@ -16,7 +16,7 @@ const ProjectsPage = () => (
           Styletron for CSS in JS.
         </Paragraph>
         <nav>
-          <a href="https://fished.io" target="_blank" rel="nofollow noreferrer">
+          <a href="https://fished.io" target="_blank" rel="noopener noreferrer">
             Live Demo
           </a>
         </nav>
@@ -45,11 +45,8 @@ const Preview = styled.div`
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 900px;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 `;
+
 const Title = styled.h1`
   margin: 1rem 0;
 `;

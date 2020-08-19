@@ -15,13 +15,13 @@ const Portfolio = () => (
       <PortfolioContainer>
         <TextDiv>
           <Paragraph>
-            These are the Projects I've completed while at General Assembly.
+            These are the projects I've completed.
           </Paragraph>
         </TextDiv>
         <ProjectsWrapper>
           <DesktopProjects>
             <FeatureLogo>
-              <a href="/projects">
+              <a href="/projects/fished">
                 <Fished />
               </a>
             </FeatureLogo>
