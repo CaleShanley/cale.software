@@ -12,7 +12,7 @@ const ProjectsPage = () => (
         <Title>Fished Security</Title>
         <Paragraph>
           I developed a landing page for Fished Security, a pre-launch start up
-          I am working on with a friend. We're using React, BaseWeb and
+          I am working on with a colleague. We're using React, BaseWeb and
           Styletron for CSS in JS.
         </Paragraph>
         <nav>
