@@ -4,7 +4,6 @@ import TicTacToe from './tictactoe';
 import ToDoList from './todolist';
 import DrinkGame from './drinkgame';
 import Fished from './fished';
-import { Link } from 'gatsby';
 import { Container } from './layoutComponents';
 import { media } from '../utils';
 

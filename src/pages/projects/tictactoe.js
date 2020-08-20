@@ -19,7 +19,7 @@ const ProjectsPage = () => (
           <a
             href="https://caleshanley.github.io/project0/"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noopener noreferrer"
           >
             Live Demo
           </a>
@@ -27,7 +27,7 @@ const ProjectsPage = () => (
             class="info"
             href="https://github.com/CaleShanley/project0"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noopener noreferrer"
           >
             Source Code
           </a>

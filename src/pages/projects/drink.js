@@ -25,7 +25,7 @@ const ProjectsPage = () => (
           <a
             href="https://github.com/CaleShanley/project2-client"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noopener noreferrer"
           >
             Source Code
           </a>

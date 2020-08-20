@@ -18,14 +18,14 @@ const ProjectsPage = () => (
           <a
             href="https://project1-todo-list.herokuapp.com/login"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noopener noreferrer"
           >
             Live Demo
           </a>
           <a
             href="https://github.com/CaleShanley/Project1"
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noopener noreferrer"
           >
             Source Code
           </a>
