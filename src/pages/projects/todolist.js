@@ -45,6 +45,10 @@ const Wrapper = styled(Container)`
 
   a {
     margin-right: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   ${media.desktop`

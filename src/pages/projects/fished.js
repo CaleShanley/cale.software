@@ -33,6 +33,12 @@ const Wrapper = styled(Container)`
   flex-direction: column;
   max-width: 1125px;
 
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   ${media.desktop`
     margin: 6rem auto;
     flex-direction: row;
