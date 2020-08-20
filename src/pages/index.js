@@ -11,7 +11,10 @@ const IndexPage = () => (
   <Layout>
     <Container>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />\
-      <meta property="og:image" content="src/images/portfolio.png" />
+      <meta
+        property="og:image"
+        content="src/images/cale_headshot_b_w-removebg-preview (1) (8).png"
+      />
       <Hero />
       <Languages />
       <Portfolio />
