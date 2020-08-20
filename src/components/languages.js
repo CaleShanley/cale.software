@@ -38,10 +38,10 @@ const Languages = () => (
           <FrontEndDiv>
             <Heading3>Font End Development</Heading3>
             <p>
-              My code is always structured and thought out. I use all the latest
-              CSS, HTML and JavaScript to ensure that the designs are
-              responsive. I also implement the principal of DRY (Don't repeat
-              yourself) when developing any website.
+              (Desired Career) My code is always structured and thought out. I
+              use all the latest CSS, HTML and JavaScript to ensure that the
+              designs are responsive. I also implement the principal of DRY
+              (Don't repeat yourself) when developing any website.
             </p>
           </FrontEndDiv>
           <BackEndDiv>
