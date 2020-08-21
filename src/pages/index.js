@@ -10,7 +10,7 @@ import SEO from '../components/seo';
 const IndexPage = () => (
   <Layout>
     <Container>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />\
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <meta
         property="og:image"
         content="src/images/cale_headshot_b_w-removebg-preview (1) (8).png"
