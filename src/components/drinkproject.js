@@ -6,7 +6,7 @@ import { Container } from './layoutComponents';
 const Portfolio = () => (
   <div>
     <Container>
-      <Title>Drinking Game:</Title>
+      <Title>COVID Social:</Title>
       <PortfolioContainer>
         <div>
           <p>

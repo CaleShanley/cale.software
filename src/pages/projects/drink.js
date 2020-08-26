@@ -9,7 +9,7 @@ const ProjectsPage = () => (
   <Layout>
     <Wrapper>
       <Text>
-        <Title>Drinking Game</Title>
+        <Title>COVID Social</Title>
         <Paragraph>
           Landing page for our Game Project - Website created with React and
           Firebase.
