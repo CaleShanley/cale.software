@@ -10,7 +10,7 @@ const Portfolio = () => (
       <PortfolioContainer>
         <div>
           <p>
-            Landing page for our Game Project - Website created with React and
+            Landin page for our Game Project - Website created with React and
             Firebase.
           </p>
           <GreyText>(This was a Group Project)</GreyText>
