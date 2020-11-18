@@ -21,12 +21,6 @@
 
 Live Demo: [cale.software](https://cale.software/)
 
-## 🚀 Clone Me
-
-**Clone this repository**
-
-`git clone https://github.com/CaleShanley/cale.software.git`
-
 ## 🧐 About this Project
 
 1. This Website is created using React and Gatsby. I've also learnt to use [styled-components](https://styled-components.com/) during this project.
