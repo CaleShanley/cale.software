@@ -20,7 +20,7 @@ const IndexPage = () => (
         <meta property="og:url" content="https://cale.software" />
         <meta property="og:title" content="Cale's Portfolio" />
         <meta property="og:description" content="Junior Website Developer" />
-        <meta property="og:image" content="https://cale.software" />
+        <meta property="og:image" content="https://i.imgur.com/nDzfCLQ.png" />
       </Helmet>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Hero />
