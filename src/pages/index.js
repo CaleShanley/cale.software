@@ -14,12 +14,13 @@ const IndexPage = () => (
       <Helmet>
         <title>Cale's Portfolio</title>
         <meta name="title" content="Cale's Portfolio" />
-        <meta
-          name="description"
-          content="Sydney based Web developer and recent general assembly graduate for software engineering."
-        />
-        <meta property="og:image" content="/src/images/portfolio-meta.png" />
+        <meta name="description" content="Junior Website Developer" />
+
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cale.software" />
+        <meta property="og:title" content="Cale's Portfolio" />
+        <meta property="og:description" content="Junior Website Developer" />
+        <meta property="og:image" content="/src/images/portfolio-meta.png" />
       </Helmet>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Hero />
