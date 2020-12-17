@@ -61,10 +61,10 @@ const Wrapper = styled(Container)`
 
 const Preview = styled.div`
   transition: all 0.3s ease-in;
-  margin: 2rem 0 0;
+  margin: 3rem;
   box-shadow: 2px 2px 50px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
-  max-width: 900px;
+  max-width: 400px;
 `;
 
 const Title = styled.h1`
