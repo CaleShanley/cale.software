@@ -1,5 +1,4 @@
 import React from 'react';
-import MetaTags from 'react-meta-tags';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Languages from '../components/languages';
