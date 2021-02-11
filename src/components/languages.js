@@ -6,7 +6,7 @@ import { ReactComponent as Htmllogo } from '../images/svg/htmllogo.svg';
 import { ReactComponent as Javascriptlogo } from '../images/svg/javascriptlogo.svg';
 import { ReactComponent as Npmlogo } from '../images/svg/npmlogo.svg';
 import { ReactComponent as Vuelogo } from '../images/svg/vuelogo.svg';
-import { ReactComponent as Railslogo } from '../images/svg/railslogo.svg';
+import { ReactComponent as Reactlogo } from '../images/svg/reactlogo.svg';
 import { ReactComponent as Nodelogo } from '../images/svg/nodelogo.svg';
 import { ReactComponent as Gitlogo } from '../images/svg/gitlogo.svg';
 import { ReactComponent as Mysqllogo } from '../images/svg/mysqllogo.svg';
@@ -28,7 +28,7 @@ const Languages = () => (
           <Vuelogo />
         </RowDiv>
         <RowDiv>
-          <Railslogo />
+          <Reactlogo />
           <Nodelogo />
           <Mysqllogo />
         </RowDiv>
