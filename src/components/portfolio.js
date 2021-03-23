@@ -4,6 +4,7 @@ import TicTacToe from './tictactoe';
 import ToDoList from './todolist';
 import DrinkGame from './drinkgame';
 import Fished from './fished';
+import Safewill from './safewill';
 import { Container } from './layoutComponents';
 import { media } from '../utils';
 
@@ -15,6 +16,11 @@ const Portfolio = () => (
         <TextDiv>
           <Paragraph>These are the projects I've completed.</Paragraph>
         </TextDiv>
+        <FeatureLogo>
+          <a href="/projects/safewill">
+            <Safewill />
+          </a>
+        </FeatureLogo>
         <ProjectsWrapper>
           <DesktopProjects>
             <FeatureLogo>
