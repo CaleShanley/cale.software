@@ -14,7 +14,9 @@ const Portfolio = () => (
       <Heading2>My Projects:</Heading2>
       <PortfolioContainer>
         <TextDiv>
-          <Paragraph>These are the projects I've completed.</Paragraph>
+          <Paragraph>
+            These are the projects I've completed or currently working on.
+          </Paragraph>
         </TextDiv>
         <FeatureLogo>
           <a href="/projects/safewill">
