@@ -11,8 +11,8 @@ const ProjectsPage = () => (
       <Text>
         <Title>Safewill</Title>
         <Paragraph>
-          I'm currently working for Safewill as a Junior QA engineer. It's a
-          legal tech statup made to help everyday Australians write their will
+          I'm currently working for Safewill as a Junior Software Engineer. It's
+          a legal tech statup made to help everyday Australians write their will
           online.
         </Paragraph>
         <nav>
