@@ -68,7 +68,7 @@ const HeroContainer = styled.div`
   padding: 1rem 0;
   margin-bottom: 3rem;
   margin-top: 1em;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   font-size: 20px;
   word-spacing: 2px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
