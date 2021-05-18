@@ -13,8 +13,8 @@ const Hero = () => (
       <Subtitle> Currently looking for work</Subtitle>
       <Title>Cale Shanley</Title>
       <p>
-        Recently graduated General Assembly's Software Engineering course. I am
-        very eager to learn and develop my skills. I'm also passionate,
+        Recently graduating from General Assembly's Software Engineering course.
+        I am very eager to learn and develop my skills. I'm also passionate,
         motivated and excited for my future in the industry.
       </p>
       <p>
