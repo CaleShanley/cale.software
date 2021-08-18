@@ -23,7 +23,7 @@ const Portfolio = ({ siteTitle, className }) => (
         </ProjectsWrapper>
       </PortfolioContainer>
       <nav>
-        <a href="https://fished.io" target="_blank"
+        <a href="https://fished.com.au" target="_blank"
           rel="nofollow noreferrer">
           Live Demo
         </a>
